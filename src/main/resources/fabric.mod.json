@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "northernthaifoodmod",
+	"version": "${version}",
+	"name": "Northern Thai Food",
+	"description": "Northern Thai Food Mod for Education",
+	"authors": [
+		"lion"
+	],
+	"contact": {
+		"homepage": "https://lion.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/northernthaifoodmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.lion.northernthaifoodmod.NorthernThaiFoodMod"
+		],
+		"fabric-datagen": [
+			"net.lion.northernthaifoodmod.NorthernThaiFoodModDataGenerator"
+		],
+		"client": [
+			"net.lion.northernthaifoodmod.NorthernThaiFoodModClient"
+		]
+	},
+	"mixins": [
+		"northernthaifoodmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
