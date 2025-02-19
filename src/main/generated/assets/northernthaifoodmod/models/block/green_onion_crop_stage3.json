@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "northernthaifoodmod:block/green_onion_crop_stage3"
+  }
+}
