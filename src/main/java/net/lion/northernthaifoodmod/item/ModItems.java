@@ -2,7 +2,9 @@ package net.lion.northernthaifoodmod.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.lion.northernthaifoodmod.NorthernThaiFoodMod;
+import net.lion.northernthaifoodmod.block.ModBlocks;
 import net.lion.northernthaifoodmod.item.custom.ChiselItem;
+import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.ItemStack;
@@ -28,7 +30,16 @@ public class ModItems {
         }
     });
 
+    public static final Item GREEN_ONION = registerItem("green_onion", new Item(new Item.Settings()));
+
     public static final Item STARLIGHT_ASHES = registerItem("starlight_ashes", new Item(new Item.Settings()));
+
+    public static final Item CAULIFLOWER_SEEDS = registerItem("cauliflower_seeds",
+            new AliasedBlockItem(ModBlocks.CAULIFLOWER_CROP, new Item.Settings()));
+
+    public static final Item GREEN_ONION_SEED = registerItem("green_onion_seed",
+            new AliasedBlockItem(ModBlocks.GREEN_ONION_CROP, new Item.Settings()));
+
 
     private static Item registerItem(String name,Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(NorthernThaiFoodMod.MOD_ID, name), item);

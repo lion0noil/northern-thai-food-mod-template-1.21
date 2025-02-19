@@ -2,7 +2,6 @@
   "item.northernthaifoodmod.pink_garnet": "Pink Garnet",
   "item.northernthaifoodmod.raw_pink_garnet": "Raw Pink Garnet",
   "item.northernthaifoodmod.chisel": "Chisel",
-  "item.northernthaifoodmod.cauliflower": "Cauliflower",
   "item.northernthaifoodmod.starlight_ashes": "Starlight Ashes",
 
 
@@ -23,6 +22,19 @@
   "tooltip.northernthaifoodmod.chisel.shift_down": "This item chisels blocks into Bricks!",
   "tooltip.northernthaifoodmod.chisel": "Press §eShift§r for more Information!",
 
-  "tooltip.northernthaifoodmod.cauliflower.tooltip": "This is delicious!"
+  "tooltip.northernthaifoodmod.cauliflower.tooltip": "This is delicious!",
 
+  "item.northernthaifoodmod.cauliflower": "Cauliflower",
+
+  "item.northernthaifoodmod.cauliflower_seeds": "Cauliflower Seeds",
+
+  "block.northernthaifoodmod.cauliflower_crop": "Cauliflower Crop",
+
+  "itemgroup.northernthaifoodmod.northern_thai_food_mod": "Northern Thai Food",
+
+  "item.northernthaifoodmod.green_onion": "Green Onion",
+
+  "item.northernthaifoodmod.green_onion_seed": "Green Onion Seed",
+
+  "block.northernthaifoodmod.green_onion_crop": "Green Onion Crop"
 }

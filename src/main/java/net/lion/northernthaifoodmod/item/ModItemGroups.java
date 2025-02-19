@@ -22,6 +22,7 @@ public class ModItemGroups {
 
                         entries.add(ModItems.CHISEL);
                         entries.add(ModItems.CAULIFLOWER);
+                        entries.add(ModItems.CAULIFLOWER_SEEDS);
 
                         entries.add(ModItems.STARLIGHT_ASHES);
 
@@ -39,6 +40,18 @@ public class ModItemGroups {
                         entries.add(ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
 
                         entries.add(ModBlocks.MAGIC_BLOCK);
+
+
+                    }).build());
+
+    public static final ItemGroup NORTHERN_THAI_FOOD_MOD = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(NorthernThaiFoodMod.MOD_ID, "green_onion"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.GREEN_ONION))
+                    .displayName(Text.translatable("itemgroup.northernthaifoodmod.northern_thai_food_mod"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModItems.GREEN_ONION);
+                        entries.add(ModItems.GREEN_ONION_SEED);
+
 
 
                     }).build());
