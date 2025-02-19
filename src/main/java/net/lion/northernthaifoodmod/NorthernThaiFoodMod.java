@@ -2,6 +2,7 @@ package net.lion.northernthaifoodmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.lion.northernthaifoodmod.block.ModBlocks;
 import net.lion.northernthaifoodmod.item.ModItemGroups;
 import net.lion.northernthaifoodmod.item.ModItems;
@@ -19,6 +20,8 @@ public class NorthernThaiFoodMod implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES,600);
 
 	}
 }

@@ -2,6 +2,8 @@
   "item.northernthaifoodmod.pink_garnet": "Pink Garnet",
   "item.northernthaifoodmod.raw_pink_garnet": "Raw Pink Garnet",
   "item.northernthaifoodmod.chisel": "Chisel",
+  "item.northernthaifoodmod.cauliflower": "Cauliflower",
+  "item.northernthaifoodmod.starlight_ashes": "Starlight Ashes",
 
 
   "block.northernthaifoodmod.pink_garnet_block": "Block of Pink Garnet",
@@ -9,6 +11,9 @@
 
   "block.northernthaifoodmod.pink_garnet_ore": "Pink Garnet Ore",
   "block.northernthaifoodmod.pink_garnet_deepslate_ore": "Pink Garnet Deepslate Ore",
+
+  "block.northernthaifoodmod.magic_block": "Magic Block",
+
 
   "itemgroup.northernthaifoodmod.pink_garnet_items": "Pink Garnet Items",
   "itemgroup.northernthaifoodmod.pink_garnet_blocks": "Pink Garnet Blocks"
