@@ -50,7 +50,12 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.northernthaifoodmod.northern_thai_food_mod"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.GREEN_ONION);
+                        entries.add(ModItems.CHILI);
+
                         entries.add(ModItems.GREEN_ONION_SEED);
+                        entries.add(ModItems.CHILI_SEED);
+
+                        entries.add(ModItems.FOOD1);
 
 
 

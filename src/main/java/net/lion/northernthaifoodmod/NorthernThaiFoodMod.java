@@ -30,5 +30,8 @@ public class NorthernThaiFoodMod implements ModInitializer {
 
 		CompostingChanceRegistry.INSTANCE.add(ModItems.GREEN_ONION, 0.5f);
 		CompostingChanceRegistry.INSTANCE.add(ModItems.GREEN_ONION_SEED, 0.25f);
+
+		CompostingChanceRegistry.INSTANCE.add(ModItems.CHILI, 0.5f);
+		CompostingChanceRegistry.INSTANCE.add(ModItems.CHILI_SEED, 0.25f);
 	}
 }

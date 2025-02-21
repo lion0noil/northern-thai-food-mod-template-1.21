@@ -30,15 +30,21 @@ public class ModItems {
         }
     });
 
-    public static final Item GREEN_ONION = registerItem("green_onion", new Item(new Item.Settings()));
-
     public static final Item STARLIGHT_ASHES = registerItem("starlight_ashes", new Item(new Item.Settings()));
 
     public static final Item CAULIFLOWER_SEEDS = registerItem("cauliflower_seeds",
             new AliasedBlockItem(ModBlocks.CAULIFLOWER_CROP, new Item.Settings()));
 
+    public static final Item GREEN_ONION = registerItem("green_onion", new Item(new Item.Settings()));
+    public static final Item CHILI = registerItem("chili", new Item(new Item.Settings()));
+
     public static final Item GREEN_ONION_SEED = registerItem("green_onion_seed",
             new AliasedBlockItem(ModBlocks.GREEN_ONION_CROP, new Item.Settings()));
+
+    public static final Item CHILI_SEED = registerItem("chili_seed",
+            new AliasedBlockItem(ModBlocks.CHILI_CHOP, new Item.Settings()));
+
+    public static final Item FOOD1 = registerItem("food1", new Item(new Item.Settings().food(ModFoodComponents.FOOD1)));
 
 
     private static Item registerItem(String name,Item item) {

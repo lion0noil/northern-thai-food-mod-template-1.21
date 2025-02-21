@@ -33,8 +33,13 @@
   "itemgroup.northernthaifoodmod.northern_thai_food_mod": "Northern Thai Food",
 
   "item.northernthaifoodmod.green_onion": "Green Onion",
+  "item.northernthaifoodmod.chili": "Chili",
 
   "item.northernthaifoodmod.green_onion_seed": "Green Onion Seed",
+  "item.northernthaifoodmod.chili_seed": "Chili Seed",
 
-  "block.northernthaifoodmod.green_onion_crop": "Green Onion Crop"
+  "block.northernthaifoodmod.green_onion_crop": "Green Onion Crop",
+  "block.northernthaifoodmod.chili_crop": "Chili Crop",
+
+  "item.northernthaifoodmod.food1": "Grilled Egg in Banana Leaf"
 }

@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.lion.northernthaifoodmod.block.ModBlocks;
 import net.lion.northernthaifoodmod.block.custom.CauliflowerCropBlock;
+import net.lion.northernthaifoodmod.block.custom.ChiliCropBlock;
 import net.lion.northernthaifoodmod.block.custom.GreenOnionCropBlock;
 import net.lion.northernthaifoodmod.item.ModItems;
 import net.minecraft.data.client.BlockStateModelGenerator;
@@ -26,6 +27,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerCrop(ModBlocks.CAULIFLOWER_CROP, CauliflowerCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
         blockStateModelGenerator.registerCrop(ModBlocks.GREEN_ONION_CROP, GreenOnionCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
+        blockStateModelGenerator.registerCrop(ModBlocks.CHILI_CHOP, ChiliCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
 
     }
 
@@ -39,6 +41,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.STARLIGHT_ASHES, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.GREEN_ONION, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CHILI, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.FOOD1, Models.GENERATED);
 
     }
 }
