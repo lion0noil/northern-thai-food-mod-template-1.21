@@ -19,5 +19,19 @@ public class ModFoodComponents {
     public static final FoodComponent FOOD9 = new FoodComponent.Builder().nutrition(6).saturationModifier(0.4f).build();
     public static final FoodComponent FOOD10 = new FoodComponent.Builder().nutrition(9).saturationModifier(0.4f).build();
 
+    public static final FoodComponent FOOD11 = new FoodComponent.Builder().nutrition(8).saturationModifier(0.4f).build();
+    public static final FoodComponent FOOD12 = new FoodComponent.Builder().nutrition(10).saturationModifier(0.4f).build();
+    public static final FoodComponent FOOD13 = new FoodComponent.Builder().nutrition(9).saturationModifier(0.3f).build();
+    public static final FoodComponent FOOD14 = new FoodComponent.Builder().nutrition(9).saturationModifier(0.4f).build();
+    public static final FoodComponent FOOD15 = new FoodComponent.Builder().nutrition(8).saturationModifier(0.4f).build();
+
+    public static final FoodComponent FOOD16 = new FoodComponent.Builder().nutrition(8).saturationModifier(0.4f).build();
+    public static final FoodComponent FOOD17 = new FoodComponent.Builder().nutrition(8).saturationModifier(0.4f).build();
+    public static final FoodComponent FOOD18 = new FoodComponent.Builder().nutrition(6).saturationModifier(0.3f).build();
+    public static final FoodComponent FOOD19 = new FoodComponent.Builder().nutrition(10).saturationModifier(0.4f).build();
+    public static final FoodComponent FOOD20 = new FoodComponent.Builder().nutrition(9).saturationModifier(0.4f).build();
+
+    public static final FoodComponent FOOD21 = new FoodComponent.Builder().nutrition(4).saturationModifier(0.4f).build();
+
 
 }

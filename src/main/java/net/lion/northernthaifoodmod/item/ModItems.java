@@ -56,6 +56,21 @@ public class ModItems {
     public static final Item FOOD9 = registerItem("food9", new Item(new Item.Settings().food(ModFoodComponents.FOOD9)));
     public static final Item FOOD10 = registerItem("food10", new Item(new Item.Settings().food(ModFoodComponents.FOOD10)));
 
+    public static final Item FOOD11 = registerItem("food11", new Item(new Item.Settings().food(ModFoodComponents.FOOD11)));
+    public static final Item FOOD12 = registerItem("food12", new Item(new Item.Settings().food(ModFoodComponents.FOOD12)));
+    public static final Item FOOD13 = registerItem("food13", new Item(new Item.Settings().food(ModFoodComponents.FOOD13)));
+    public static final Item FOOD14 = registerItem("food14", new Item(new Item.Settings().food(ModFoodComponents.FOOD14)));
+    public static final Item FOOD15 = registerItem("food15", new Item(new Item.Settings().food(ModFoodComponents.FOOD15)));
+
+    public static final Item FOOD16 = registerItem("food16", new Item(new Item.Settings().food(ModFoodComponents.FOOD16)));
+    public static final Item FOOD17 = registerItem("food17", new Item(new Item.Settings().food(ModFoodComponents.FOOD17)));
+    public static final Item FOOD18 = registerItem("food18", new Item(new Item.Settings().food(ModFoodComponents.FOOD18)));
+    public static final Item FOOD19 = registerItem("food19", new Item(new Item.Settings().food(ModFoodComponents.FOOD19)));
+    public static final Item FOOD20 = registerItem("food20", new Item(new Item.Settings().food(ModFoodComponents.FOOD20)));
+
+    public static final Item FOOD21 = registerItem("food21", new Item(new Item.Settings().food(ModFoodComponents.FOOD21)));
+
+
 
     private static Item registerItem(String name,Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(NorthernThaiFoodMod.MOD_ID, name), item);

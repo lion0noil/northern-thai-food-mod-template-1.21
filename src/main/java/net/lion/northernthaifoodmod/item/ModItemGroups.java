@@ -67,6 +67,20 @@ public class ModItemGroups {
                         entries.add(ModItems.FOOD9);
                         entries.add(ModItems.FOOD10);
 
+                        entries.add(ModItems.FOOD11);
+                        entries.add(ModItems.FOOD12);
+                        entries.add(ModItems.FOOD13);
+                        entries.add(ModItems.FOOD14);
+                        entries.add(ModItems.FOOD15);
+
+                        entries.add(ModItems.FOOD16);
+                        entries.add(ModItems.FOOD17);
+                        entries.add(ModItems.FOOD18);
+                        entries.add(ModItems.FOOD19);
+                        entries.add(ModItems.FOOD20);
+
+                        entries.add(ModItems.FOOD21);
+
 
                     }).build());
 
