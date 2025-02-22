@@ -35,6 +35,19 @@ public class ModItems {
     public static final Item CAULIFLOWER_SEEDS = registerItem("cauliflower_seeds",
             new AliasedBlockItem(ModBlocks.CAULIFLOWER_CROP, new Item.Settings()));
 
+    public static final Item CURRY_POWDER = registerItem("curry_powder", new Item(new Item.Settings()));
+    public static final Item F_SOYBEAN_P = registerItem("fermented_soybean_paste", new Item(new Item.Settings()));
+    public static final Item FISH_SAUCE = registerItem("fish_sauce", new Item(new Item.Settings()));
+    public static final Item FLOUR = registerItem("flour", new Item(new Item.Settings()));
+
+    public static final Item OIL = registerItem("oil", new Item(new Item.Settings()));
+    public static final Item SALT = registerItem("salt", new Item(new Item.Settings()));
+    public static final Item SHRIMP_P = registerItem("shrimp_paste", new Item(new Item.Settings()));
+    public static final Item TAMARIND_P = registerItem("tamarind_paste", new Item(new Item.Settings()));
+
+    public static final Item NOODLE = registerItem("noodle", new Item(new Item.Settings()));
+    public static final Item RICE = registerItem("rice", new Item(new Item.Settings()));
+
     public static final Item GREEN_ONION = registerItem("green_onion", new Item(new Item.Settings()));
     public static final Item CHILI = registerItem("chili", new Item(new Item.Settings()));
 

@@ -49,6 +49,19 @@ public class ModItemGroups {
             FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.GREEN_ONION))
                     .displayName(Text.translatable("itemgroup.northernthaifoodmod.northern_thai_food_mod"))
                     .entries((displayContext, entries) -> {
+                        entries.add(ModItems.CURRY_POWDER);
+                        entries.add(ModItems.F_SOYBEAN_P);
+                        entries.add(ModItems.FISH_SAUCE);
+                        entries.add(ModItems.FLOUR);
+
+                        entries.add(ModItems.OIL);
+                        entries.add(ModItems.SALT);
+                        entries.add(ModItems.SHRIMP_P);
+                        entries.add(ModItems.TAMARIND_P);
+
+                        entries.add(ModItems.NOODLE);
+                        entries.add(ModItems.RICE);
+
                         entries.add(ModItems.GREEN_ONION);
                         entries.add(ModItems.CHILI);
 

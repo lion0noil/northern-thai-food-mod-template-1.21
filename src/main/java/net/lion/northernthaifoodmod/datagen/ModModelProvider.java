@@ -40,6 +40,19 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.CHISEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.STARLIGHT_ASHES, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.CURRY_POWDER, Models.GENERATED);
+        itemModelGenerator.register(ModItems.F_SOYBEAN_P, Models.GENERATED);
+        itemModelGenerator.register(ModItems.FISH_SAUCE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.FLOUR, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.OIL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SALT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SHRIMP_P, Models.GENERATED);
+        itemModelGenerator.register(ModItems.TAMARIND_P, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.NOODLE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RICE, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.GREEN_ONION, Models.GENERATED);
         itemModelGenerator.register(ModItems.CHILI, Models.GENERATED);
 
