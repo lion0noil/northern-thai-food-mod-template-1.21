@@ -50,6 +50,12 @@ public class ModItems {
     public static final Item FOOD4 = registerItem("food4", new Item(new Item.Settings().food(ModFoodComponents.FOOD4)));
     public static final Item FOOD5 = registerItem("food5", new Item(new Item.Settings().food(ModFoodComponents.FOOD5)));
 
+    public static final Item FOOD6 = registerItem("food6", new Item(new Item.Settings().food(ModFoodComponents.FOOD6)));
+    public static final Item FOOD7 = registerItem("food7", new Item(new Item.Settings().food(ModFoodComponents.FOOD7)));
+    public static final Item FOOD8 = registerItem("food8", new Item(new Item.Settings().food(ModFoodComponents.FOOD8)));
+    public static final Item FOOD9 = registerItem("food9", new Item(new Item.Settings().food(ModFoodComponents.FOOD9)));
+    public static final Item FOOD10 = registerItem("food10", new Item(new Item.Settings().food(ModFoodComponents.FOOD10)));
+
 
     private static Item registerItem(String name,Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(NorthernThaiFoodMod.MOD_ID, name), item);

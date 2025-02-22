@@ -1,9 +1,9 @@
-// 1.21	2025-02-22T16:27:24.1894418	Northern Thai Food/Block Loot Tables
+// 1.21	2025-02-22T16:47:56.1538366	Northern Thai Food/Block Loot Tables
 1db77bf3f8ed6f3286662499ee0be90a5f88d74e data\northernthaifoodmod\loot_table\blocks\cauliflower_crop.json
 a52ebc530495d9f0eeae255844a8c45ade6cd4f7 data\northernthaifoodmod\loot_table\blocks\pink_garnet_ore.json
 5388b01521975c95f7e04a30c6d7139193730e81 data\northernthaifoodmod\loot_table\blocks\pink_garnet_block.json
 a19c52bb02e7cbac4556292ab0734e0d52d15b28 data\northernthaifoodmod\loot_table\blocks\magic_block.json
-2b985747032ba4cc46130698935c4357bb57b941 data\northernthaifoodmod\loot_table\blocks\chili_crop.json
 8392b159d844eadb50f721bb63adea852d6cb65f data\northernthaifoodmod\loot_table\blocks\pink_garnet_deepslate_ore.json
+2b985747032ba4cc46130698935c4357bb57b941 data\northernthaifoodmod\loot_table\blocks\chili_crop.json
 ede270569a0a9e709c451b03490ddfb842d18978 data\northernthaifoodmod\loot_table\blocks\raw_pink_garnet_block.json
 1d2882ed1bee43e4e25f01f4e57b442f7b1c62a5 data\northernthaifoodmod\loot_table\blocks\green_onion_crop.json

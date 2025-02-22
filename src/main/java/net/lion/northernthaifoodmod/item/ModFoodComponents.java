@@ -12,4 +12,12 @@ public class ModFoodComponents {
     public static final FoodComponent FOOD3 = new FoodComponent.Builder().nutrition(6).saturationModifier(0.3f).build();
     public static final FoodComponent FOOD4 = new FoodComponent.Builder().nutrition(7).saturationModifier(0.4f).build();
     public static final FoodComponent FOOD5 = new FoodComponent.Builder().nutrition(11).saturationModifier(0.4f).build();
+
+    public static final FoodComponent FOOD6 = new FoodComponent.Builder().nutrition(8).saturationModifier(0.4f).build();
+    public static final FoodComponent FOOD7 = new FoodComponent.Builder().nutrition(7).saturationModifier(0.4f).build();
+    public static final FoodComponent FOOD8 = new FoodComponent.Builder().nutrition(10).saturationModifier(0.3f).build();
+    public static final FoodComponent FOOD9 = new FoodComponent.Builder().nutrition(6).saturationModifier(0.4f).build();
+    public static final FoodComponent FOOD10 = new FoodComponent.Builder().nutrition(9).saturationModifier(0.4f).build();
+
+
 }
