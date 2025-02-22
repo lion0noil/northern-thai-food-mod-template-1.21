@@ -41,5 +41,9 @@
   "block.northernthaifoodmod.green_onion_crop": "Green Onion Crop",
   "block.northernthaifoodmod.chili_crop": "Chili Crop",
 
-  "item.northernthaifoodmod.food1": "Grilled Egg in Banana Leaf"
+  "item.northernthaifoodmod.food1": "Grilled Egg in Banana Leaf",
+  "item.northernthaifoodmod.food2": "Gaeng Hung Lay",
+  "item.northernthaifoodmod.food3": "Crab Roe Dip",
+  "item.northernthaifoodmod.food4": "Galangal Chili Paste with Earthstar Mushrooms",
+  "item.northernthaifoodmod.food5": "Puffball Mushroom Curry"
 }

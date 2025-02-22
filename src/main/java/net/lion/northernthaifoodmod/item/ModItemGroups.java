@@ -56,6 +56,10 @@ public class ModItemGroups {
                         entries.add(ModItems.CHILI_SEED);
 
                         entries.add(ModItems.FOOD1);
+                        entries.add(ModItems.FOOD2);
+                        entries.add(ModItems.FOOD3);
+                        entries.add(ModItems.FOOD4);
+                        entries.add(ModItems.FOOD5);
 
 
 

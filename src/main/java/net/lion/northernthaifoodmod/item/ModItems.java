@@ -45,6 +45,10 @@ public class ModItems {
             new AliasedBlockItem(ModBlocks.CHILI_CHOP, new Item.Settings()));
 
     public static final Item FOOD1 = registerItem("food1", new Item(new Item.Settings().food(ModFoodComponents.FOOD1)));
+    public static final Item FOOD2 = registerItem("food2", new Item(new Item.Settings().food(ModFoodComponents.FOOD2)));
+    public static final Item FOOD3 = registerItem("food3", new Item(new Item.Settings().food(ModFoodComponents.FOOD3)));
+    public static final Item FOOD4 = registerItem("food4", new Item(new Item.Settings().food(ModFoodComponents.FOOD4)));
+    public static final Item FOOD5 = registerItem("food5", new Item(new Item.Settings().food(ModFoodComponents.FOOD5)));
 
 
     private static Item registerItem(String name,Item item) {
