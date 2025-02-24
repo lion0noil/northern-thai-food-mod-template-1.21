@@ -64,6 +64,7 @@ public class ModItemGroups {
 
                         entries.add(ModItems.GREEN_ONION);
                         entries.add(ModItems.CHILI);
+                        entries.add(ModItems.CHILANTRO);
 
                         entries.add(ModItems.GREEN_ONION_SEED);
                         entries.add(ModItems.CHILI_SEED);
