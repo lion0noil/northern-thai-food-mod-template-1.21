@@ -68,9 +68,11 @@
   "item.northernthaifoodmod.thai_eggplant": "Thai Eggplant",
   "item.northernthaifoodmod.tomato": "Tomato",
 
+  "item.northernthaifoodmod.bean_seed": "Bean Seed",
   "item.northernthaifoodmod.green_onion_seed": "Green Onion Seed",
   "item.northernthaifoodmod.chili_seed": "Chili Seed",
 
+  "block.northernthaifoodmod.bean_crop": "Bean Crop",
   "block.northernthaifoodmod.green_onion_crop": "Green Onion Crop",
   "block.northernthaifoodmod.chili_crop": "Chili Crop",
 

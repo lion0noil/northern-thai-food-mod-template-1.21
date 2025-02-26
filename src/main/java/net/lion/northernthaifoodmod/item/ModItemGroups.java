@@ -85,6 +85,7 @@ public class ModItemGroups {
                         entries.add(ModItems.THAI_EGGPLANT);
                         entries.add(ModItems.TOMATO);
 
+                        entries.add(ModItems.BEAN_SEED);
                         entries.add(ModItems.GREEN_ONION_SEED);
                         entries.add(ModItems.CHILI_SEED);
 

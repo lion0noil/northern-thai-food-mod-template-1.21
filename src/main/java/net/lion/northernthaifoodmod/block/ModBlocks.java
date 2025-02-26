@@ -3,10 +3,7 @@ package net.lion.northernthaifoodmod.block;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.lion.northernthaifoodmod.NorthernThaiFoodMod;
-import net.lion.northernthaifoodmod.block.custom.CauliflowerCropBlock;
-import net.lion.northernthaifoodmod.block.custom.ChiliCropBlock;
-import net.lion.northernthaifoodmod.block.custom.GreenOnionCropBlock;
-import net.lion.northernthaifoodmod.block.custom.MagicBlock;
+import net.lion.northernthaifoodmod.block.custom.*;
 import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
@@ -41,6 +38,11 @@ public class ModBlocks {
     public static final Block CAULIFLOWER_CROP = registerBlockWithoutBlockItem("cauliflower_crop",
             new CauliflowerCropBlock(AbstractBlock.Settings.create().noCollision()
                     .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).mapColor(MapColor.DARK_GREEN)));
+
+    public static final Block BEAN_CROP = registerBlockWithoutBlockItem("bean_crop",
+            new BeanCropBlock(AbstractBlock.Settings.create().noCollision()
+                    .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).mapColor(MapColor.DARK_GREEN)));
+
 
     public static final Block GREEN_ONION_CROP = registerBlockWithoutBlockItem("green_onion_crop",
             new GreenOnionCropBlock(AbstractBlock.Settings.create().noCollision()
