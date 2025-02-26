@@ -53,9 +53,28 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.NOODLE, Models.GENERATED);
         itemModelGenerator.register(ModItems.RICE, Models.GENERATED);
 
-        itemModelGenerator.register(ModItems.GREEN_ONION, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BEAN, Models.GENERATED);
         itemModelGenerator.register(ModItems.CHILI, Models.GENERATED);
         itemModelGenerator.register(ModItems.CHILANTRO, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GALANGAL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GARLIC, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.GINGER, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GREEN_ONION, Models.GENERATED);
+        itemModelGenerator.register(ModItems.IVY, Models.GENERATED);
+        itemModelGenerator.register(ModItems.KAFFIR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.KAPOK, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.LAKSA, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LEMONGRASS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LONG_BEAN, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PINEAPPLE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SHALLOT, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.SPEARMINT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.TAMARIND, Models.GENERATED);
+        itemModelGenerator.register(ModItems.THAI_EGGPLANT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.TOMATO, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.FOOD1, Models.GENERATED);
         itemModelGenerator.register(ModItems.FOOD2, Models.GENERATED);

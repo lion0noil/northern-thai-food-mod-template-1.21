@@ -62,9 +62,28 @@ public class ModItemGroups {
                         entries.add(ModItems.NOODLE);
                         entries.add(ModItems.RICE);
 
-                        entries.add(ModItems.GREEN_ONION);
+                        entries.add(ModItems.BEAN);
                         entries.add(ModItems.CHILI);
                         entries.add(ModItems.CHILANTRO);
+                        entries.add(ModItems.GALANGAL);
+                        entries.add(ModItems.GARLIC);
+
+                        entries.add(ModItems.GINGER);
+                        entries.add(ModItems.GREEN_ONION);
+                        entries.add(ModItems.IVY);
+                        entries.add(ModItems.KAFFIR);
+                        entries.add(ModItems.KAPOK);
+
+                        entries.add(ModItems.LAKSA);
+                        entries.add(ModItems.LEMONGRASS);
+                        entries.add(ModItems.LONG_BEAN);
+                        entries.add(ModItems.PINEAPPLE);
+                        entries.add(ModItems.SHALLOT);
+
+                        entries.add(ModItems.SPEARMINT);
+                        entries.add(ModItems.TAMARIND);
+                        entries.add(ModItems.THAI_EGGPLANT);
+                        entries.add(ModItems.TOMATO);
 
                         entries.add(ModItems.GREEN_ONION_SEED);
                         entries.add(ModItems.CHILI_SEED);

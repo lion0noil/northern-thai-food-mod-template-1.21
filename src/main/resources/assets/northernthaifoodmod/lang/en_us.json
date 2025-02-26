@@ -45,9 +45,28 @@
   "item.northernthaifoodmod.noodle": "Noodle",
   "item.northernthaifoodmod.rice": "Rice",
 
-  "item.northernthaifoodmod.green_onion": "Green Onion",
+  "item.northernthaifoodmod.bean": "Bean",
   "item.northernthaifoodmod.chili": "Chili",
   "item.northernthaifoodmod.cilantro": "Cilantro",
+  "item.northernthaifoodmod.galangal": "Galangal",
+  "item.northernthaifoodmod.garlic": "Garlic",
+
+  "item.northernthaifoodmod.ginger": "Ginger",
+  "item.northernthaifoodmod.green_onion": "Green Onion",
+  "item.northernthaifoodmod.ivy_gourd_leaves": "Ivy Gourd Leaves",
+  "item.northernthaifoodmod.kaffir_lime_leaf": "Kaffir Lime Leaf",
+  "item.northernthaifoodmod.kapok_flower": "Kapok Flower",
+
+  "item.northernthaifoodmod.laksa_leaf": "Laksa Leaf",
+  "item.northernthaifoodmod.lemongrass": "Lemongrass",
+  "item.northernthaifoodmod.long_bean": "Long Bean",
+  "item.northernthaifoodmod.pineapple": "Pineapple",
+  "item.northernthaifoodmod.shallot": "Shallot",
+
+  "item.northernthaifoodmod.spearmint": "Spearmint",
+  "item.northernthaifoodmod.tamarind": "Tamarind",
+  "item.northernthaifoodmod.thai_eggplant": "Thai Eggplant",
+  "item.northernthaifoodmod.tomato": "Tomato",
 
   "item.northernthaifoodmod.green_onion_seed": "Green Onion Seed",
   "item.northernthaifoodmod.chili_seed": "Chili Seed",

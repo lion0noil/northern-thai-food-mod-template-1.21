@@ -48,9 +48,28 @@ public class ModItems {
     public static final Item NOODLE = registerItem("noodle", new Item(new Item.Settings()));
     public static final Item RICE = registerItem("rice", new Item(new Item.Settings()));
 
-    public static final Item GREEN_ONION = registerItem("green_onion", new Item(new Item.Settings()));
+    public static final Item BEAN = registerItem("bean", new Item(new Item.Settings()));
     public static final Item CHILI = registerItem("chili", new Item(new Item.Settings()));
     public static final Item CHILANTRO = registerItem("cilantro", new Item(new Item.Settings()));
+    public static final Item GALANGAL = registerItem("galangal", new Item(new Item.Settings()));
+    public static final Item GARLIC = registerItem("garlic", new Item(new Item.Settings()));
+
+    public static final Item GINGER = registerItem("ginger", new Item(new Item.Settings()));
+    public static final Item GREEN_ONION = registerItem("green_onion", new Item(new Item.Settings()));
+    public static final Item IVY = registerItem("ivy_gourd_leaves", new Item(new Item.Settings()));
+    public static final Item KAFFIR = registerItem("kaffir_lime_leaf", new Item(new Item.Settings()));
+    public static final Item KAPOK = registerItem("kapok_flower", new Item(new Item.Settings()));
+
+    public static final Item LAKSA = registerItem("laksa_leaf", new Item(new Item.Settings()));
+    public static final Item LEMONGRASS = registerItem("lemongrass", new Item(new Item.Settings()));
+    public static final Item LONG_BEAN = registerItem("long_bean", new Item(new Item.Settings()));
+    public static final Item PINEAPPLE = registerItem("pineapple", new Item(new Item.Settings()));
+    public static final Item SHALLOT = registerItem("shallot", new Item(new Item.Settings()));
+
+    public static final Item SPEARMINT = registerItem("spearmint", new Item(new Item.Settings()));
+    public static final Item TAMARIND = registerItem("tamarind", new Item(new Item.Settings()));
+    public static final Item THAI_EGGPLANT = registerItem("thai_eggplant", new Item(new Item.Settings()));
+    public static final Item TOMATO = registerItem("tomato", new Item(new Item.Settings()));
 
     public static final Item GREEN_ONION_SEED = registerItem("green_onion_seed",
             new AliasedBlockItem(ModBlocks.GREEN_ONION_CROP, new Item.Settings()));
