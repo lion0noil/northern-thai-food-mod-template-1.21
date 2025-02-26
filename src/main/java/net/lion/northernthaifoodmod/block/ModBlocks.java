@@ -43,14 +43,19 @@ public class ModBlocks {
             new BeanCropBlock(AbstractBlock.Settings.create().noCollision()
                     .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).mapColor(MapColor.DARK_GREEN)));
 
-
-    public static final Block GREEN_ONION_CROP = registerBlockWithoutBlockItem("green_onion_crop",
-            new GreenOnionCropBlock(AbstractBlock.Settings.create().noCollision()
+    public static final Block CILANTRO_CROP = registerBlockWithoutBlockItem("cilantro_crop",
+            new CilantroCropBlock(AbstractBlock.Settings.create().noCollision()
                     .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).mapColor(MapColor.DARK_GREEN)));
 
     public static final Block CHILI_CHOP = registerBlockWithoutBlockItem("chili_crop",
             new ChiliCropBlock(AbstractBlock.Settings.create().noCollision()
                     .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).mapColor(MapColor.DARK_GREEN)));
+
+
+    public static final Block GREEN_ONION_CROP = registerBlockWithoutBlockItem("green_onion_crop",
+            new GreenOnionCropBlock(AbstractBlock.Settings.create().noCollision()
+                    .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).mapColor(MapColor.DARK_GREEN)));
+
 
     private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registries.BLOCK, Identifier.of(NorthernThaiFoodMod.MOD_ID, name), block);

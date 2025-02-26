@@ -69,12 +69,18 @@
   "item.northernthaifoodmod.tomato": "Tomato",
 
   "item.northernthaifoodmod.bean_seed": "Bean Seed",
-  "item.northernthaifoodmod.green_onion_seed": "Green Onion Seed",
   "item.northernthaifoodmod.chili_seed": "Chili Seed",
+  "item.northernthaifoodmod.cilantro_seed": "Cilantro Seed",
+
+  "item.northernthaifoodmod.green_onion_seed": "Green Onion Seed",
+
 
   "block.northernthaifoodmod.bean_crop": "Bean Crop",
-  "block.northernthaifoodmod.green_onion_crop": "Green Onion Crop",
   "block.northernthaifoodmod.chili_crop": "Chili Crop",
+  "block.northernthaifoodmod.cilantro_crop": "Cilantro Crop",
+
+  "block.northernthaifoodmod.green_onion_crop": "Green Onion Crop",
+
 
   "item.northernthaifoodmod.food1": "Grilled Egg in Banana Leaf",
   "item.northernthaifoodmod.food2": "Gaeng Hung Lay",

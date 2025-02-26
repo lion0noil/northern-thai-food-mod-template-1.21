@@ -3,10 +3,7 @@ package net.lion.northernthaifoodmod.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.lion.northernthaifoodmod.block.ModBlocks;
-import net.lion.northernthaifoodmod.block.custom.BeanCropBlock;
-import net.lion.northernthaifoodmod.block.custom.CauliflowerCropBlock;
-import net.lion.northernthaifoodmod.block.custom.ChiliCropBlock;
-import net.lion.northernthaifoodmod.block.custom.GreenOnionCropBlock;
+import net.lion.northernthaifoodmod.block.custom.*;
 import net.lion.northernthaifoodmod.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.enchantment.Enchantment;
@@ -47,19 +44,24 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         BlockStatePropertyLootCondition.Builder beanCondition = BlockStatePropertyLootCondition.builder(ModBlocks.BEAN_CROP)
                 .properties(StatePredicate.Builder.create().exactMatch(BeanCropBlock.AGE, BeanCropBlock.MAX_AGE));
 
-        BlockStatePropertyLootCondition.Builder greenOnionCondition = BlockStatePropertyLootCondition.builder(ModBlocks.GREEN_ONION_CROP)
-                .properties(StatePredicate.Builder.create().exactMatch(GreenOnionCropBlock.AGE, GreenOnionCropBlock.MAX_AGE));
-
         BlockStatePropertyLootCondition.Builder chiliCondition = BlockStatePropertyLootCondition.builder(ModBlocks.CHILI_CHOP)
                 .properties(StatePredicate.Builder.create().exactMatch(ChiliCropBlock.AGE, ChiliCropBlock.MAX_AGE));
+
+        BlockStatePropertyLootCondition.Builder CilantroCondition = BlockStatePropertyLootCondition.builder(ModBlocks.CILANTRO_CROP)
+                .properties(StatePredicate.Builder.create().exactMatch(CilantroCropBlock.AGE, CilantroCropBlock.MAX_AGE));
+
+        BlockStatePropertyLootCondition.Builder greenOnionCondition = BlockStatePropertyLootCondition.builder(ModBlocks.GREEN_ONION_CROP)
+                .properties(StatePredicate.Builder.create().exactMatch(GreenOnionCropBlock.AGE, GreenOnionCropBlock.MAX_AGE));
 
 
 
         this.addDrop(ModBlocks.CAULIFLOWER_CROP, this.cropDrops(ModBlocks.CAULIFLOWER_CROP, ModItems.CAULIFLOWER, ModItems.CAULIFLOWER_SEEDS, builder2));
 
         this.addDrop(ModBlocks.BEAN_CROP, this.cropDrops(ModBlocks.BEAN_CROP, ModItems.BEAN, ModItems.BEAN_SEED, beanCondition));
-        this.addDrop(ModBlocks.GREEN_ONION_CROP, this.cropDrops(ModBlocks.GREEN_ONION_CROP, ModItems.GREEN_ONION, ModItems.GREEN_ONION_SEED, greenOnionCondition));
         this.addDrop(ModBlocks.CHILI_CHOP, this.cropDrops(ModBlocks.CHILI_CHOP, ModItems.CHILI, ModItems.CHILI_SEED, chiliCondition));
+        this.addDrop(ModBlocks.CILANTRO_CROP, this.cropDrops(ModBlocks.CILANTRO_CROP, ModItems.CHILANTRO, ModItems.CILANTRO_SEED, CilantroCondition));
+
+        this.addDrop(ModBlocks.GREEN_ONION_CROP, this.cropDrops(ModBlocks.GREEN_ONION_CROP, ModItems.GREEN_ONION, ModItems.GREEN_ONION_SEED, greenOnionCondition));
 
     }
 
