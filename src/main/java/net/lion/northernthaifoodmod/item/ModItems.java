@@ -80,6 +80,9 @@ public class ModItems {
     public static final Item CILANTRO_SEED = registerItem("cilantro_seed",
             new AliasedBlockItem(ModBlocks.CILANTRO_CROP, new Item.Settings()));
 
+    public static final Item GALANGAL_SEED = registerItem("galangal_seed",
+            new AliasedBlockItem(ModBlocks.GALANGAL_CROP, new Item.Settings()));
+
 
 
     public static final Item GREEN_ONION_SEED = registerItem("green_onion_seed",

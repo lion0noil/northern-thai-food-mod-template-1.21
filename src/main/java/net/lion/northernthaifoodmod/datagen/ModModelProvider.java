@@ -28,6 +28,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCrop(ModBlocks.BEAN_CROP, BeanCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
         blockStateModelGenerator.registerCrop(ModBlocks.CHILI_CHOP, ChiliCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
         blockStateModelGenerator.registerCrop(ModBlocks.CILANTRO_CROP, CilantroCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
+        blockStateModelGenerator.registerCrop(ModBlocks.GALANGAL_CROP, GalangalCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
 
 
         blockStateModelGenerator.registerCrop(ModBlocks.GREEN_ONION_CROP, GreenOnionCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
