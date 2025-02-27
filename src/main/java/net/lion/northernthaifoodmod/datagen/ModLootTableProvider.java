@@ -68,6 +68,15 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         BlockStatePropertyLootCondition.Builder KaffirCondition = BlockStatePropertyLootCondition.builder(ModBlocks.KAFFIR_CROP)
                 .properties(StatePredicate.Builder.create().exactMatch(KaffirlimeleafCropBlock.AGE, KaffirlimeleafCropBlock.MAX_AGE));
 
+        BlockStatePropertyLootCondition.Builder KapokCondition = BlockStatePropertyLootCondition.builder(ModBlocks.KAPOK_CROP)
+                .properties(StatePredicate.Builder.create().exactMatch(KapokflowerCropBlock.AGE, KapokflowerCropBlock.MAX_AGE));
+
+        BlockStatePropertyLootCondition.Builder LaksaCondition = BlockStatePropertyLootCondition.builder(ModBlocks.LAKSA_CROP)
+                .properties(StatePredicate.Builder.create().exactMatch(LaksaleafCropBlock.AGE, LaksaleafCropBlock.MAX_AGE));
+
+        BlockStatePropertyLootCondition.Builder LemongrassCondition = BlockStatePropertyLootCondition.builder(ModBlocks.LEMONGRASS_CROP)
+                .properties(StatePredicate.Builder.create().exactMatch(LemongrassCropBlock.AGE, LemongrassCropBlock.MAX_AGE));
+
 
 
         this.addDrop(ModBlocks.CAULIFLOWER_CROP, this.cropDrops(ModBlocks.CAULIFLOWER_CROP, ModItems.CAULIFLOWER, ModItems.CAULIFLOWER_SEEDS, builder2));
@@ -82,6 +91,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.GREEN_ONION_CROP, this.cropDrops(ModBlocks.GREEN_ONION_CROP, ModItems.GREEN_ONION, ModItems.GREEN_ONION_SEED, greenOnionCondition));
         this.addDrop(ModBlocks.IVY_G_L_CROP, this.cropDrops(ModBlocks.IVY_G_L_CROP, ModItems.IVY, ModItems.IVY_G_L_SEED, IvyCondition));
         this.addDrop(ModBlocks.KAFFIR_CROP, this.cropDrops(ModBlocks.KAFFIR_CROP, ModItems.KAFFIR, ModItems.KAFFIR_SEED, KaffirCondition));
+        this.addDrop(ModBlocks.KAPOK_CROP, this.cropDrops(ModBlocks.KAPOK_CROP, ModItems.KAPOK, ModItems.KAPOK_SEED, KapokCondition));
+
+        this.addDrop(ModBlocks.LAKSA_CROP, this.cropDrops(ModBlocks.LAKSA_CROP, ModItems.LAKSA, ModItems.LAKSA_SEED, LaksaCondition));
+        this.addDrop(ModBlocks.LEMONGRASS_CROP, this.cropDrops(ModBlocks.LEMONGRASS_CROP, ModItems.LEMONGRASS, ModItems.LEMONGRASS_SEED, LemongrassCondition));
 
     }
 

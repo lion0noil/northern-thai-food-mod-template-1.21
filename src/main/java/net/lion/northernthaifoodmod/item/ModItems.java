@@ -98,6 +98,15 @@ public class ModItems {
     public static final Item KAFFIR_SEED = registerItem("kaffir_lime_leaf_seed",
             new AliasedBlockItem(ModBlocks.KAFFIR_CROP, new Item.Settings()));
 
+    public static final Item KAPOK_SEED = registerItem("kapok_flower_seed",
+            new AliasedBlockItem(ModBlocks.KAPOK_CROP, new Item.Settings()));
+
+    public static final Item LAKSA_SEED = registerItem("laksa_leaf_seed",
+            new AliasedBlockItem(ModBlocks.LAKSA_CROP, new Item.Settings()));
+
+    public static final Item LEMONGRASS_SEED = registerItem("lemongrass_seed",
+            new AliasedBlockItem(ModBlocks.LEMONGRASS_CROP, new Item.Settings()));
+
 
     public static final Item FOOD1 = registerItem("food1", new Item(new Item.Settings().food(ModFoodComponents.FOOD1)));
     public static final Item FOOD2 = registerItem("food2", new Item(new Item.Settings().food(ModFoodComponents.FOOD2)));

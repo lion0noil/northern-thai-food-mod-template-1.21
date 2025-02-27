@@ -1,9 +1,12 @@
-// 1.21	2025-02-27T14:47:53.5859499	Northern Thai Food/Block Loot Tables
+// 1.21	2025-02-27T15:24:46.8492317	Northern Thai Food/Block Loot Tables
 6c79c3d60d100fa42df4df35faa3669b45423e58 data\northernthaifoodmod\loot_table\blocks\ginger_crop.json
 a52ebc530495d9f0eeae255844a8c45ade6cd4f7 data\northernthaifoodmod\loot_table\blocks\pink_garnet_ore.json
 5388b01521975c95f7e04a30c6d7139193730e81 data\northernthaifoodmod\loot_table\blocks\pink_garnet_block.json
 8392b159d844eadb50f721bb63adea852d6cb65f data\northernthaifoodmod\loot_table\blocks\pink_garnet_deepslate_ore.json
 c2fb5e79939407381637c6d352a6a8011841a23a data\northernthaifoodmod\loot_table\blocks\kaffir_lime_leaf_crop.json
+06c583a6c9caf580bb9235f794c318f23b3749e3 data\northernthaifoodmod\loot_table\blocks\laksa_leaf_crop.json
+6df5375c10b18abbe2d6ad4b1527ea3a6e3e55bf data\northernthaifoodmod\loot_table\blocks\kapok_flower_crop.json
+d05149a14b80672d1ffaca8500e977bbd043a4cc data\northernthaifoodmod\loot_table\blocks\lemongrass_crop.json
 64294065ef7ad50a1481bc183613f40cd9f0ace1 data\northernthaifoodmod\loot_table\blocks\bean_crop.json
 d426ba77d1bef9be8a7b5f2168b8134546adc6d8 data\northernthaifoodmod\loot_table\blocks\galangal_crop.json
 2bdd07aa70c9e011145ce0f331dc008cf18ea4d0 data\northernthaifoodmod\loot_table\blocks\cilantro_crop.json

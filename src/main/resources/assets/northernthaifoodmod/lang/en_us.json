@@ -78,6 +78,10 @@
   "item.northernthaifoodmod.green_onion_seed": "Green Onion Seed",
   "item.northernthaifoodmod.ivy_gourd_leaves_seed": "Ivy Gourd Leaves Seed",
   "item.northernthaifoodmod.kaffir_lime_leaf_seed": "Kaffir Lime Leaf Seed",
+  "item.northernthaifoodmod.kapok_flower_seed": "Kapok Flower Seed",
+
+  "item.northernthaifoodmod.laksa_leaf_seed": "Laksa Leaf Seed",
+  "item.northernthaifoodmod.lemongrass_seed": "Lemongrass Seed",
 
 
   "block.northernthaifoodmod.bean_crop": "Bean Crop",
@@ -90,6 +94,10 @@
   "block.northernthaifoodmod.green_onion_crop": "Green Onion Crop",
   "block.northernthaifoodmod.ivy_gourd_leaves_crop": "Ivy GourdLeaves Crop",
   "block.northernthaifoodmod.kaffir_lime_leaf_crop": "Kaffir Lime Leaf Crop",
+  "block.northernthaifoodmod.kapok_flower_crop": "Kapok Flower Crop",
+
+  "block.northernthaifoodmod.laksa_leaf_crop": "Laksa Leaf Crop",
+  "block.northernthaifoodmod.lemongrass_crop": "Lemongrass Crop",
 
 
   "item.northernthaifoodmod.food1": "Grilled Egg in Banana Leaf",

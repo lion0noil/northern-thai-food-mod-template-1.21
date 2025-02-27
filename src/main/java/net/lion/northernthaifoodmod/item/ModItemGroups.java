@@ -95,6 +95,10 @@ public class ModItemGroups {
                         entries.add(ModItems.GREEN_ONION_SEED);
                         entries.add(ModItems.IVY_G_L_SEED);
                         entries.add(ModItems.KAFFIR_SEED);
+                        entries.add(ModItems.KAPOK_SEED);
+
+                        entries.add(ModItems.LAKSA_SEED);
+                        entries.add(ModItems.LEMONGRASS_SEED);
 
                         entries.add(ModItems.FOOD1);
                         entries.add(ModItems.FOOD2);
