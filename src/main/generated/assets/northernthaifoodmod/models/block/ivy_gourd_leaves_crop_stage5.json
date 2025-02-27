@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "northernthaifoodmod:block/ivy_gourd_leaves_crop_stage5"
+  }
+}

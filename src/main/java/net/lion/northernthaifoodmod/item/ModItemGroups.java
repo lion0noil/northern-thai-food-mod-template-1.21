@@ -92,8 +92,9 @@ public class ModItemGroups {
                         entries.add(ModItems.GARLIC_SEED);
 
                         entries.add(ModItems.GINGER_SEED);
-
                         entries.add(ModItems.GREEN_ONION_SEED);
+                        entries.add(ModItems.IVY_G_L_SEED);
+                        entries.add(ModItems.KAFFIR_SEED);
 
                         entries.add(ModItems.FOOD1);
                         entries.add(ModItems.FOOD2);

@@ -89,10 +89,15 @@ public class ModItems {
     public static final Item GINGER_SEED = registerItem("ginger_seed",
             new AliasedBlockItem(ModBlocks.GINGER_CROP, new Item.Settings()));
 
-
-
     public static final Item GREEN_ONION_SEED = registerItem("green_onion_seed",
             new AliasedBlockItem(ModBlocks.GREEN_ONION_CROP, new Item.Settings()));
+
+    public static final Item IVY_G_L_SEED = registerItem("ivy_gourd_leaves_seed",
+            new AliasedBlockItem(ModBlocks.IVY_G_L_CROP, new Item.Settings()));
+
+    public static final Item KAFFIR_SEED = registerItem("kaffir_lime_leaf_seed",
+            new AliasedBlockItem(ModBlocks.KAFFIR_CROP, new Item.Settings()));
+
 
     public static final Item FOOD1 = registerItem("food1", new Item(new Item.Settings().food(ModFoodComponents.FOOD1)));
     public static final Item FOOD2 = registerItem("food2", new Item(new Item.Settings().food(ModFoodComponents.FOOD2)));

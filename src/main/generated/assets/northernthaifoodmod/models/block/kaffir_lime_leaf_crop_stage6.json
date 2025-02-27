@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "northernthaifoodmod:block/kaffir_lime_leaf_crop_stage6"
+  }
+}

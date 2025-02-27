@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "northernthaifoodmod:item/kaffir_lime_leaf_seed"
+  }
+}

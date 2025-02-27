@@ -59,10 +59,14 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         BlockStatePropertyLootCondition.Builder gingerCondition = BlockStatePropertyLootCondition.builder(ModBlocks.GINGER_CROP)
                 .properties(StatePredicate.Builder.create().exactMatch(GingerCropBlock.AGE, GingerCropBlock.MAX_AGE));
 
-
-
         BlockStatePropertyLootCondition.Builder greenOnionCondition = BlockStatePropertyLootCondition.builder(ModBlocks.GREEN_ONION_CROP)
                 .properties(StatePredicate.Builder.create().exactMatch(GreenOnionCropBlock.AGE, GreenOnionCropBlock.MAX_AGE));
+
+        BlockStatePropertyLootCondition.Builder IvyCondition = BlockStatePropertyLootCondition.builder(ModBlocks.IVY_G_L_CROP)
+                .properties(StatePredicate.Builder.create().exactMatch(IvygourdleavesCropBlock.AGE, IvygourdleavesCropBlock.MAX_AGE));
+
+        BlockStatePropertyLootCondition.Builder KaffirCondition = BlockStatePropertyLootCondition.builder(ModBlocks.KAFFIR_CROP)
+                .properties(StatePredicate.Builder.create().exactMatch(KaffirlimeleafCropBlock.AGE, KaffirlimeleafCropBlock.MAX_AGE));
 
 
 
@@ -75,8 +79,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.GARLIC_CROP, this.cropDrops(ModBlocks.GARLIC_CROP, ModItems.GARLIC, ModItems.GARLIC_SEED, garlicCondition));
 
         this.addDrop(ModBlocks.GINGER_CROP, this.cropDrops(ModBlocks.GINGER_CROP, ModItems.GINGER, ModItems.GINGER_SEED, gingerCondition));
-
         this.addDrop(ModBlocks.GREEN_ONION_CROP, this.cropDrops(ModBlocks.GREEN_ONION_CROP, ModItems.GREEN_ONION, ModItems.GREEN_ONION_SEED, greenOnionCondition));
+        this.addDrop(ModBlocks.IVY_G_L_CROP, this.cropDrops(ModBlocks.IVY_G_L_CROP, ModItems.IVY, ModItems.IVY_G_L_SEED, IvyCondition));
+        this.addDrop(ModBlocks.KAFFIR_CROP, this.cropDrops(ModBlocks.KAFFIR_CROP, ModItems.KAFFIR, ModItems.KAFFIR_SEED, KaffirCondition));
 
     }
 

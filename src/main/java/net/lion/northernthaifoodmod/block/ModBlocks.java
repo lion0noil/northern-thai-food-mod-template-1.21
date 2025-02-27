@@ -63,9 +63,16 @@ public class ModBlocks {
             new GingerCropBlock(AbstractBlock.Settings.create().noCollision()
                     .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).mapColor(MapColor.DARK_GREEN)));
 
-
     public static final Block GREEN_ONION_CROP = registerBlockWithoutBlockItem("green_onion_crop",
             new GreenOnionCropBlock(AbstractBlock.Settings.create().noCollision()
+                    .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).mapColor(MapColor.DARK_GREEN)));
+
+    public static final Block IVY_G_L_CROP = registerBlockWithoutBlockItem("ivy_gourd_leaves_crop",
+            new IvygourdleavesCropBlock(AbstractBlock.Settings.create().noCollision()
+                    .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).mapColor(MapColor.DARK_GREEN)));
+
+    public static final Block KAFFIR_CROP = registerBlockWithoutBlockItem("kaffir_lime_leaf_crop",
+            new KaffirlimeleafCropBlock(AbstractBlock.Settings.create().noCollision()
                     .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).mapColor(MapColor.DARK_GREEN)));
 
 
