@@ -122,6 +122,15 @@ public class ModItems {
     public static final Item SPEARMINT_SEED = registerItem("spearmint_seed",
             new AliasedBlockItem(ModBlocks.SPEARMINT_CROP, new Item.Settings()));
 
+    public static final Item TAMARIND_SEED = registerItem("tamarind_seed",
+            new AliasedBlockItem(ModBlocks.TAMARIND_CROP, new Item.Settings()));
+
+    public static final Item THAI_EGGPLANT_SEED = registerItem("thai_eggplant_seed",
+            new AliasedBlockItem(ModBlocks.THAI_EGGPLANT_CROP, new Item.Settings()));
+
+    public static final Item TOMATO_SEED = registerItem("tomato_seed",
+            new AliasedBlockItem(ModBlocks.TOMATO_CROP, new Item.Settings()));
+
 
     public static final Item FOOD1 = registerItem("food1", new Item(new Item.Settings().food(ModFoodComponents.FOOD1)));
     public static final Item FOOD2 = registerItem("food2", new Item(new Item.Settings().food(ModFoodComponents.FOOD2)));

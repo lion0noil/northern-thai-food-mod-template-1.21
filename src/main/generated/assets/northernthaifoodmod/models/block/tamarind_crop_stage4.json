@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "northernthaifoodmod:block/tamarind_crop_stage4"
+  }
+}

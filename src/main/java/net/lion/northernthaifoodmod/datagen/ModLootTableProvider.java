@@ -92,6 +92,15 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         BlockStatePropertyLootCondition.Builder SpearmintCondition = BlockStatePropertyLootCondition.builder(ModBlocks.SPEARMINT_CROP)
                 .properties(StatePredicate.Builder.create().exactMatch(SpearmintCropBlock.AGE, SpearmintCropBlock.MAX_AGE));
 
+        BlockStatePropertyLootCondition.Builder TamarindCondition = BlockStatePropertyLootCondition.builder(ModBlocks.TAMARIND_CROP)
+                .properties(StatePredicate.Builder.create().exactMatch(TamarindCropBlock.AGE, TamarindCropBlock.MAX_AGE));
+
+        BlockStatePropertyLootCondition.Builder ThaieggplantCondition = BlockStatePropertyLootCondition.builder(ModBlocks.THAI_EGGPLANT_CROP)
+                .properties(StatePredicate.Builder.create().exactMatch(ThaieggplantCropBlock.AGE, ThaieggplantCropBlock.MAX_AGE));
+
+        BlockStatePropertyLootCondition.Builder TomatoCondition = BlockStatePropertyLootCondition.builder(ModBlocks.TOMATO_CROP)
+                .properties(StatePredicate.Builder.create().exactMatch(TomatoCropBlock.AGE, TomatoCropBlock.MAX_AGE));
+
 
 
         this.addDrop(ModBlocks.CAULIFLOWER_CROP, this.cropDrops(ModBlocks.CAULIFLOWER_CROP, ModItems.CAULIFLOWER, ModItems.CAULIFLOWER_SEEDS, builder2));
@@ -116,6 +125,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.RICE_CROP, this.cropDrops(ModBlocks.RICE_CROP, ModItems.RICE, ModItems.RICE_SEED, RiceCondition));
         this.addDrop(ModBlocks.SHALLOT_CROP, this.cropDrops(ModBlocks.SHALLOT_CROP, ModItems.SHALLOT, ModItems.SHALLOT_SEED, ShallotCondition));
         this.addDrop(ModBlocks.SPEARMINT_CROP, this.cropDrops(ModBlocks.SPEARMINT_CROP, ModItems.SPEARMINT, ModItems.SPEARMINT_SEED, SpearmintCondition));
+
+        this.addDrop(ModBlocks.TAMARIND_CROP, this.cropDrops(ModBlocks.TAMARIND_CROP, ModItems.TAMARIND, ModItems.TAMARIND_SEED, TamarindCondition));
+        this.addDrop(ModBlocks.THAI_EGGPLANT_CROP, this.cropDrops(ModBlocks.THAI_EGGPLANT_CROP, ModItems.THAI_EGGPLANT, ModItems.THAI_EGGPLANT_SEED, ThaieggplantCondition));
+        this.addDrop(ModBlocks.TOMATO_CROP, this.cropDrops(ModBlocks.TOMATO_CROP, ModItems.TOMATO, ModItems.TOMATO_SEED, TomatoCondition));
 
     }
 

@@ -106,6 +106,9 @@ public class ModItemGroups {
 
                         entries.add(ModItems.SHALLOT_SEED);
                         entries.add(ModItems.SPEARMINT_SEED);
+                        entries.add(ModItems.TAMARIND_SEED);
+                        entries.add(ModItems.THAI_EGGPLANT_SEED);
+                        entries.add(ModItems.TOMATO_SEED);
 
 
 

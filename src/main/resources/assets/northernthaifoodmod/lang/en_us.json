@@ -89,6 +89,10 @@
   "item.northernthaifoodmod.shallot_seed": "Shallot Seed",
   "item.northernthaifoodmod.spearmint_seed": "Spearmint Seed",
 
+  "item.northernthaifoodmod.tamarind_seed": "Tamarind Seed",
+  "item.northernthaifoodmod.thai_eggplant_seed": "Thai Eggplant Seed",
+  "item.northernthaifoodmod.tomato_seed": "Tomato Seed",
+
 
   "block.northernthaifoodmod.bean_crop": "Bean Crop",
   "block.northernthaifoodmod.chili_crop": "Chili Crop",
@@ -110,6 +114,10 @@
   "block.northernthaifoodmod.rice_crop": "Rice Crop",
   "block.northernthaifoodmod.shallot_crop": "Shallot Crop",
   "block.northernthaifoodmod.spearmint_crop": "Spearmint Crop",
+
+  "block.northernthaifoodmod.tamarind_crop": "Tamarind Crop",
+  "block.northernthaifoodmod.thai_eggplant_crop": "Thai Eggplant Crop",
+  "block.northernthaifoodmod.tomato_crop": "Tomato Crop",
 
 
   "item.northernthaifoodmod.food1": "Grilled Egg in Banana Leaf",
