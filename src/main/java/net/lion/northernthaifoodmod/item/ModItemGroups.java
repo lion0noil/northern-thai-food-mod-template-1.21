@@ -85,6 +85,8 @@ public class ModItemGroups {
                         entries.add(ModItems.THAI_EGGPLANT);
                         entries.add(ModItems.TOMATO);
 
+                        entries.add(ModItems.RICE_SEED);
+
                         entries.add(ModItems.BEAN_SEED);
                         entries.add(ModItems.CHILI_SEED);
                         entries.add(ModItems.CILANTRO_SEED);
@@ -101,6 +103,11 @@ public class ModItemGroups {
                         entries.add(ModItems.LEMONGRASS_SEED);
                         entries.add(ModItems.LONG_BEAN_SEED);
                         entries.add(ModItems.PINEAPPLE_SEED);
+
+                        entries.add(ModItems.SHALLOT_SEED);
+                        entries.add(ModItems.SPEARMINT_SEED);
+
+
 
                         entries.add(ModItems.FOOD1);
                         entries.add(ModItems.FOOD2);

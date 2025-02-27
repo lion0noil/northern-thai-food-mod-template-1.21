@@ -83,6 +83,15 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         BlockStatePropertyLootCondition.Builder PineappleCondition = BlockStatePropertyLootCondition.builder(ModBlocks.PINEAPPLE_CROP)
                 .properties(StatePredicate.Builder.create().exactMatch(PineappleCropBlock.AGE, PineappleCropBlock.MAX_AGE));
 
+        BlockStatePropertyLootCondition.Builder RiceCondition = BlockStatePropertyLootCondition.builder(ModBlocks.RICE_CROP)
+                .properties(StatePredicate.Builder.create().exactMatch(RiceCropBlock.AGE, RiceCropBlock.MAX_AGE));
+
+        BlockStatePropertyLootCondition.Builder ShallotCondition = BlockStatePropertyLootCondition.builder(ModBlocks.SHALLOT_CROP)
+                .properties(StatePredicate.Builder.create().exactMatch(ShallotCropBlock.AGE, ShallotCropBlock.MAX_AGE));
+
+        BlockStatePropertyLootCondition.Builder SpearmintCondition = BlockStatePropertyLootCondition.builder(ModBlocks.SPEARMINT_CROP)
+                .properties(StatePredicate.Builder.create().exactMatch(SpearmintCropBlock.AGE, SpearmintCropBlock.MAX_AGE));
+
 
 
         this.addDrop(ModBlocks.CAULIFLOWER_CROP, this.cropDrops(ModBlocks.CAULIFLOWER_CROP, ModItems.CAULIFLOWER, ModItems.CAULIFLOWER_SEEDS, builder2));
@@ -103,6 +112,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.LEMONGRASS_CROP, this.cropDrops(ModBlocks.LEMONGRASS_CROP, ModItems.LEMONGRASS, ModItems.LEMONGRASS_SEED, LemongrassCondition));
         this.addDrop(ModBlocks.LONG_BEAN_CROP, this.cropDrops(ModBlocks.LONG_BEAN_CROP, ModItems.LONG_BEAN, ModItems.LONG_BEAN_SEED, LongbeanCondition));
         this.addDrop(ModBlocks.PINEAPPLE_CROP, this.cropDrops(ModBlocks.PINEAPPLE_CROP, ModItems.PINEAPPLE, ModItems.PINEAPPLE_SEED, PineappleCondition));
+
+        this.addDrop(ModBlocks.RICE_CROP, this.cropDrops(ModBlocks.RICE_CROP, ModItems.RICE, ModItems.RICE_SEED, RiceCondition));
+        this.addDrop(ModBlocks.SHALLOT_CROP, this.cropDrops(ModBlocks.SHALLOT_CROP, ModItems.SHALLOT, ModItems.SHALLOT_SEED, ShallotCondition));
+        this.addDrop(ModBlocks.SPEARMINT_CROP, this.cropDrops(ModBlocks.SPEARMINT_CROP, ModItems.SPEARMINT, ModItems.SPEARMINT_SEED, SpearmintCondition));
 
     }
 
