@@ -55,6 +55,14 @@ public class ModBlocks {
             new GalangalCropBlock(AbstractBlock.Settings.create().noCollision()
                     .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).mapColor(MapColor.DARK_GREEN)));
 
+    public static final Block GARLIC_CROP = registerBlockWithoutBlockItem("garlic_crop",
+            new GarlicCropBlock(AbstractBlock.Settings.create().noCollision()
+                    .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).mapColor(MapColor.DARK_GREEN)));
+
+    public static final Block GINGER_CROP = registerBlockWithoutBlockItem("ginger_crop",
+            new GingerCropBlock(AbstractBlock.Settings.create().noCollision()
+                    .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).mapColor(MapColor.DARK_GREEN)));
+
 
     public static final Block GREEN_ONION_CROP = registerBlockWithoutBlockItem("green_onion_crop",
             new GreenOnionCropBlock(AbstractBlock.Settings.create().noCollision()

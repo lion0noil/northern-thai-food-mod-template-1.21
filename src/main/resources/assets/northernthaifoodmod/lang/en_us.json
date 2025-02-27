@@ -72,6 +72,9 @@
   "item.northernthaifoodmod.chili_seed": "Chili Seed",
   "item.northernthaifoodmod.cilantro_seed": "Cilantro Seed",
   "item.northernthaifoodmod.galangal_seed": "Galangal Seed",
+  "item.northernthaifoodmod.garlic_seed": "Garlic Seed",
+
+  "item.northernthaifoodmod.ginger_seed": "Ginger Seed",
 
   "item.northernthaifoodmod.green_onion_seed": "Green Onion Seed",
 
@@ -80,6 +83,9 @@
   "block.northernthaifoodmod.chili_crop": "Chili Crop",
   "block.northernthaifoodmod.cilantro_crop": "Cilantro Crop",
   "block.northernthaifoodmod.galangal_crop": "Galangal Crop",
+  "block.northernthaifoodmod.garlic_crop": "Garlic Crop",
+
+  "block.northernthaifoodmod.ginger_crop": "Ginger Crop",
 
   "block.northernthaifoodmod.green_onion_crop": "Green Onion Crop",
 
