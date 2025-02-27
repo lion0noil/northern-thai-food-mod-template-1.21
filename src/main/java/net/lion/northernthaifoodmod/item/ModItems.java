@@ -107,6 +107,12 @@ public class ModItems {
     public static final Item LEMONGRASS_SEED = registerItem("lemongrass_seed",
             new AliasedBlockItem(ModBlocks.LEMONGRASS_CROP, new Item.Settings()));
 
+    public static final Item LONG_BEAN_SEED = registerItem("long_bean_seed",
+            new AliasedBlockItem(ModBlocks.LONG_BEAN_CROP, new Item.Settings()));
+
+    public static final Item PINEAPPLE_SEED = registerItem("pineapple_seed",
+            new AliasedBlockItem(ModBlocks.PINEAPPLE_CROP, new Item.Settings()));
+
 
     public static final Item FOOD1 = registerItem("food1", new Item(new Item.Settings().food(ModFoodComponents.FOOD1)));
     public static final Item FOOD2 = registerItem("food2", new Item(new Item.Settings().food(ModFoodComponents.FOOD2)));

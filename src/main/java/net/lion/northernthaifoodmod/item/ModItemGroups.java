@@ -99,6 +99,8 @@ public class ModItemGroups {
 
                         entries.add(ModItems.LAKSA_SEED);
                         entries.add(ModItems.LEMONGRASS_SEED);
+                        entries.add(ModItems.LONG_BEAN_SEED);
+                        entries.add(ModItems.PINEAPPLE_SEED);
 
                         entries.add(ModItems.FOOD1);
                         entries.add(ModItems.FOOD2);

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "northernthaifoodmod:block/long_bean_crop_stage5"
+  }
+}

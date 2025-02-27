@@ -77,6 +77,12 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         BlockStatePropertyLootCondition.Builder LemongrassCondition = BlockStatePropertyLootCondition.builder(ModBlocks.LEMONGRASS_CROP)
                 .properties(StatePredicate.Builder.create().exactMatch(LemongrassCropBlock.AGE, LemongrassCropBlock.MAX_AGE));
 
+        BlockStatePropertyLootCondition.Builder LongbeanCondition = BlockStatePropertyLootCondition.builder(ModBlocks.LONG_BEAN_CROP)
+                .properties(StatePredicate.Builder.create().exactMatch(LongbeanCropBlock.AGE, LongbeanCropBlock.MAX_AGE));
+
+        BlockStatePropertyLootCondition.Builder PineappleCondition = BlockStatePropertyLootCondition.builder(ModBlocks.PINEAPPLE_CROP)
+                .properties(StatePredicate.Builder.create().exactMatch(PineappleCropBlock.AGE, PineappleCropBlock.MAX_AGE));
+
 
 
         this.addDrop(ModBlocks.CAULIFLOWER_CROP, this.cropDrops(ModBlocks.CAULIFLOWER_CROP, ModItems.CAULIFLOWER, ModItems.CAULIFLOWER_SEEDS, builder2));
@@ -95,6 +101,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         this.addDrop(ModBlocks.LAKSA_CROP, this.cropDrops(ModBlocks.LAKSA_CROP, ModItems.LAKSA, ModItems.LAKSA_SEED, LaksaCondition));
         this.addDrop(ModBlocks.LEMONGRASS_CROP, this.cropDrops(ModBlocks.LEMONGRASS_CROP, ModItems.LEMONGRASS, ModItems.LEMONGRASS_SEED, LemongrassCondition));
+        this.addDrop(ModBlocks.LONG_BEAN_CROP, this.cropDrops(ModBlocks.LONG_BEAN_CROP, ModItems.LONG_BEAN, ModItems.LONG_BEAN_SEED, LongbeanCondition));
+        this.addDrop(ModBlocks.PINEAPPLE_CROP, this.cropDrops(ModBlocks.PINEAPPLE_CROP, ModItems.PINEAPPLE, ModItems.PINEAPPLE_SEED, PineappleCondition));
 
     }
 
