@@ -33,5 +33,29 @@ public class ModFoodComponents {
 
     public static final FoodComponent FOOD21 = new FoodComponent.Builder().nutrition(4).saturationModifier(0.4f).build();
 
+    public static final FoodComponent BEAN = new FoodComponent.Builder().nutrition(2).saturationModifier(0.1f).build();
+    public static final FoodComponent CHILI = new FoodComponent.Builder().nutrition(1).saturationModifier(0.1f).build();
+    public static final FoodComponent CHILANTRO = new FoodComponent.Builder().nutrition(2).saturationModifier(0.1f).build();
+    public static final FoodComponent GALANGAL = new FoodComponent.Builder().nutrition(1).saturationModifier(0.1f).build();
+    public static final FoodComponent GARLIC = new FoodComponent.Builder().nutrition(1).saturationModifier(0.1f).build();
+
+    public static final FoodComponent GINGER = new FoodComponent.Builder().nutrition(1).saturationModifier(0.1f).build();
+    public static final FoodComponent GREEN_ONION = new FoodComponent.Builder().nutrition(1).saturationModifier(0.1f).build();
+    public static final FoodComponent IVY = new FoodComponent.Builder().nutrition(1).saturationModifier(0.1f).build();
+    public static final FoodComponent KAFFIR = new FoodComponent.Builder().nutrition(1).saturationModifier(0.1f).build();
+    public static final FoodComponent KAPOK = new FoodComponent.Builder().nutrition(1).saturationModifier(0.1f).build();
+
+    public static final FoodComponent LAKSA = new FoodComponent.Builder().nutrition(1).saturationModifier(0.1f).build();
+    public static final FoodComponent LEMONGRASS = new FoodComponent.Builder().nutrition(1).saturationModifier(0.1f).build();
+    public static final FoodComponent LONG_BEAN = new FoodComponent.Builder().nutrition(1).saturationModifier(0.1f).build();
+    public static final FoodComponent PINEAPPLE = new FoodComponent.Builder().nutrition(1).saturationModifier(0.1f).build();
+    public static final FoodComponent SHALLOT = new FoodComponent.Builder().nutrition(1).saturationModifier(0.1f).build();
+
+    public static final FoodComponent SPEARMINT = new FoodComponent.Builder().nutrition(1).saturationModifier(0.1f).build();
+    public static final FoodComponent TAMARIND = new FoodComponent.Builder().nutrition(1).saturationModifier(0.1f).build();
+    public static final FoodComponent THAI_EGGPLANT = new FoodComponent.Builder().nutrition(1).saturationModifier(0.1f).build();
+    public static final FoodComponent TOMATO = new FoodComponent.Builder().nutrition(3).saturationModifier(0.1f).build();
+
+
 
 }

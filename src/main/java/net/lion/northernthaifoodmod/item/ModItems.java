@@ -50,28 +50,28 @@ public class ModItems {
     public static final Item NOODLE = registerItem("noodle", new Item(new Item.Settings()));
     public static final Item RICE = registerItem("rice", new Item(new Item.Settings()));
 
-    public static final Item BEAN = registerItem("bean", new Item(new Item.Settings()));
-    public static final Item CHILI = registerItem("chili", new Item(new Item.Settings()));
-    public static final Item CHILANTRO = registerItem("cilantro", new Item(new Item.Settings()));
-    public static final Item GALANGAL = registerItem("galangal", new Item(new Item.Settings()));
-    public static final Item GARLIC = registerItem("garlic", new Item(new Item.Settings()));
+    public static final Item BEAN = registerItem("bean", new Item(new Item.Settings().food(ModFoodComponents.BEAN)));
+    public static final Item CHILI = registerItem("chili", new Item(new Item.Settings().food(ModFoodComponents.CHILI)));
+    public static final Item CHILANTRO = registerItem("cilantro", new Item(new Item.Settings().food(ModFoodComponents.CHILANTRO)));
+    public static final Item GALANGAL = registerItem("galangal", new Item(new Item.Settings().food(ModFoodComponents.GALANGAL)));
+    public static final Item GARLIC = registerItem("garlic", new Item(new Item.Settings().food(ModFoodComponents.GARLIC)));
 
-    public static final Item GINGER = registerItem("ginger", new Item(new Item.Settings()));
-    public static final Item GREEN_ONION = registerItem("green_onion", new Item(new Item.Settings()));
-    public static final Item IVY = registerItem("ivy_gourd_leaves", new Item(new Item.Settings()));
-    public static final Item KAFFIR = registerItem("kaffir_lime_leaf", new Item(new Item.Settings()));
-    public static final Item KAPOK = registerItem("kapok_flower", new Item(new Item.Settings()));
+    public static final Item GINGER = registerItem("ginger", new Item(new Item.Settings().food(ModFoodComponents.GINGER)));
+    public static final Item GREEN_ONION = registerItem("green_onion", new Item(new Item.Settings().food(ModFoodComponents.GREEN_ONION)));
+    public static final Item IVY = registerItem("ivy_gourd_leaves", new Item(new Item.Settings().food(ModFoodComponents.IVY)));
+    public static final Item KAFFIR = registerItem("kaffir_lime_leaf", new Item(new Item.Settings().food(ModFoodComponents.KAFFIR)));
+    public static final Item KAPOK = registerItem("kapok_flower", new Item(new Item.Settings().food(ModFoodComponents.KAPOK)));
 
-    public static final Item LAKSA = registerItem("laksa_leaf", new Item(new Item.Settings()));
-    public static final Item LEMONGRASS = registerItem("lemongrass", new Item(new Item.Settings()));
-    public static final Item LONG_BEAN = registerItem("long_bean", new Item(new Item.Settings()));
-    public static final Item PINEAPPLE = registerItem("pineapple", new Item(new Item.Settings()));
-    public static final Item SHALLOT = registerItem("shallot", new Item(new Item.Settings()));
+    public static final Item LAKSA = registerItem("laksa_leaf", new Item(new Item.Settings().food(ModFoodComponents.LAKSA)));
+    public static final Item LEMONGRASS = registerItem("lemongrass", new Item(new Item.Settings().food(ModFoodComponents.LEMONGRASS)));
+    public static final Item LONG_BEAN = registerItem("long_bean", new Item(new Item.Settings().food(ModFoodComponents.LONG_BEAN)));
+    public static final Item PINEAPPLE = registerItem("pineapple", new Item(new Item.Settings().food(ModFoodComponents.PINEAPPLE)));
+    public static final Item SHALLOT = registerItem("shallot", new Item(new Item.Settings().food(ModFoodComponents.SHALLOT)));
 
-    public static final Item SPEARMINT = registerItem("spearmint", new Item(new Item.Settings()));
-    public static final Item TAMARIND = registerItem("tamarind", new Item(new Item.Settings()));
-    public static final Item THAI_EGGPLANT = registerItem("thai_eggplant", new Item(new Item.Settings()));
-    public static final Item TOMATO = registerItem("tomato", new Item(new Item.Settings()));
+    public static final Item SPEARMINT = registerItem("spearmint", new Item(new Item.Settings().food(ModFoodComponents.SPEARMINT)));
+    public static final Item TAMARIND = registerItem("tamarind", new Item(new Item.Settings().food(ModFoodComponents.TAMARIND)));
+    public static final Item THAI_EGGPLANT = registerItem("thai_eggplant", new Item(new Item.Settings().food(ModFoodComponents.THAI_EGGPLANT)));
+    public static final Item TOMATO = registerItem("tomato", new Item(new Item.Settings().food(ModFoodComponents.TOMATO)));
 
     public static final Item BEAN_SEED = registerItem("bean_seed",
             new AliasedBlockItem(ModBlocks.BEAN_CROP, new Item.Settings()));

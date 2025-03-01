@@ -9,6 +9,7 @@ import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.Identifier;
@@ -149,6 +150,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.TOMATO), conditionsFromItem(ModItems.TOMATO))
                 .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.TAMARIND_P,3)
+                .pattern("TTT")
+                .pattern(" W ")
+                .pattern("GGG")
+                .input('T', ModItems.TAMARIND)
+                .input('G', Items.GLASS_BOTTLE)
+                .input('W', Items.WATER_BUCKET)
+                .criterion(hasItem(ModItems.TAMARIND), conditionsFromItem(ModItems.TAMARIND))
+                .offerTo(exporter);
 
 
 
