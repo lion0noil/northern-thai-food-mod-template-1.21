@@ -35,6 +35,8 @@ public class ModItems {
     public static final Item CAULIFLOWER_SEEDS = registerItem("cauliflower_seeds",
             new AliasedBlockItem(ModBlocks.CAULIFLOWER_CROP, new Item.Settings()));
 
+
+
     public static final Item CURRY_POWDER = registerItem("curry_powder", new Item(new Item.Settings()));
     public static final Item F_SOYBEAN_P = registerItem("fermented_soybean_paste", new Item(new Item.Settings()));
     public static final Item FISH_SAUCE = registerItem("fish_sauce", new Item(new Item.Settings()));
@@ -134,7 +136,7 @@ public class ModItems {
 
     public static final Item FOOD1 = registerItem("food1", new Item(new Item.Settings().food(ModFoodComponents.FOOD1)));
     public static final Item FOOD2 = registerItem("food2", new Item(new Item.Settings().food(ModFoodComponents.FOOD2)));
-    public static final Item FOOD3 = registerItem("food3", new Item(new Item.Settings().food(ModFoodComponents.FOOD3)));
+
     public static final Item FOOD4 = registerItem("food4", new Item(new Item.Settings().food(ModFoodComponents.FOOD4)));
     public static final Item FOOD5 = registerItem("food5", new Item(new Item.Settings().food(ModFoodComponents.FOOD5)));
 

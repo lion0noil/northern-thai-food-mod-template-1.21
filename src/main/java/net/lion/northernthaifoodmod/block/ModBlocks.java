@@ -135,6 +135,7 @@ public class ModBlocks {
                 new BlockItem(block, new Item.Settings()));
     }
 
+
     public static void registerModBlocks() {
         NorthernThaiFoodMod.LOGGER.info("Registering Mod Blocks for" + NorthernThaiFoodMod.MOD_ID);
 

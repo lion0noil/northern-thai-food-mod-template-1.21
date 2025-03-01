@@ -99,7 +99,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.FOOD1, Models.GENERATED);
         itemModelGenerator.register(ModItems.FOOD2, Models.GENERATED);
-        itemModelGenerator.register(ModItems.FOOD3, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.FOOD4, Models.GENERATED);
         itemModelGenerator.register(ModItems.FOOD5, Models.GENERATED);
 

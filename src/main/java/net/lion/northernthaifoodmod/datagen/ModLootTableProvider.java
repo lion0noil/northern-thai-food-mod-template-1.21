@@ -40,7 +40,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                 .properties(StatePredicate.Builder.create().exactMatch(CauliflowerCropBlock.AGE, CauliflowerCropBlock.MAX_AGE));
 
 
-
         BlockStatePropertyLootCondition.Builder beanCondition = BlockStatePropertyLootCondition.builder(ModBlocks.BEAN_CROP)
                 .properties(StatePredicate.Builder.create().exactMatch(BeanCropBlock.AGE, BeanCropBlock.MAX_AGE));
 
