@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "northernthaifoodmod:long_bean"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "northernthaifoodmod:long_bean_seed"
+  }
+}

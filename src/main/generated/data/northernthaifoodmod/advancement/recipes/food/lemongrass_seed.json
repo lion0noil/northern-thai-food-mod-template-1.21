@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_lemongrass": {
+      "conditions": {
+        "items": [
+          {
+            "items": "northernthaifoodmod:lemongrass"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "northernthaifoodmod:lemongrass_seed"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_lemongrass"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "northernthaifoodmod:lemongrass_seed"
+    ]
+  }
+}

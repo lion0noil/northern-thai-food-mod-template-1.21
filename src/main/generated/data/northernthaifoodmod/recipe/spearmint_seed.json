@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "northernthaifoodmod:spearmint"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "northernthaifoodmod:spearmint_seed"
+  }
+}

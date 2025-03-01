@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_bean": {
+      "conditions": {
+        "items": [
+          {
+            "items": "northernthaifoodmod:bean"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "northernthaifoodmod:bean_seed"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_bean"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "northernthaifoodmod:bean_seed"
+    ]
+  }
+}

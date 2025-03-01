@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_kaffir_lime_leaf": {
+      "conditions": {
+        "items": [
+          {
+            "items": "northernthaifoodmod:kaffir_lime_leaf"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "northernthaifoodmod:kaffir_lime_leaf_seed"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_kaffir_lime_leaf"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "northernthaifoodmod:kaffir_lime_leaf_seed"
+    ]
+  }
+}

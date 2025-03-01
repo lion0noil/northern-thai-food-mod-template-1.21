@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_long_bean": {
+      "conditions": {
+        "items": [
+          {
+            "items": "northernthaifoodmod:long_bean"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "northernthaifoodmod:long_bean_seed"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_long_bean"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "northernthaifoodmod:long_bean_seed"
+    ]
+  }
+}

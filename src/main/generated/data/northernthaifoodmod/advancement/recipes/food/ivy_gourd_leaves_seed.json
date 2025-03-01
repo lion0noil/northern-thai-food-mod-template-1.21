@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_ivy_gourd_leaves": {
+      "conditions": {
+        "items": [
+          {
+            "items": "northernthaifoodmod:ivy_gourd_leaves"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "northernthaifoodmod:ivy_gourd_leaves_seed"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_ivy_gourd_leaves"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "northernthaifoodmod:ivy_gourd_leaves_seed"
+    ]
+  }
+}

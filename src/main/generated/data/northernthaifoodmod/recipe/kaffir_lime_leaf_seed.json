@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "northernthaifoodmod:kaffir_lime_leaf"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "northernthaifoodmod:kaffir_lime_leaf_seed"
+  }
+}

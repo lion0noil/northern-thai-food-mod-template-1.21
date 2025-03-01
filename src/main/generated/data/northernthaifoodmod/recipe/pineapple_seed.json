@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "northernthaifoodmod:pineapple"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "northernthaifoodmod:pineapple_seed"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "northernthaifoodmod:laksa_leaf"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "northernthaifoodmod:laksa_leaf_seed"
+  }
+}

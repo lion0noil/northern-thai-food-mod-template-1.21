@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "northernthaifoodmod:rice"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "northernthaifoodmod:rice_seed"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_thai_eggplant": {
+      "conditions": {
+        "items": [
+          {
+            "items": "northernthaifoodmod:thai_eggplant"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "northernthaifoodmod:thai_eggplant_seed"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_thai_eggplant"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "northernthaifoodmod:thai_eggplant_seed"
+    ]
+  }
+}

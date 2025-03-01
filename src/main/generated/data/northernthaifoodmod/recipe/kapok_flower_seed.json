@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "northernthaifoodmod:kapok_flower"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "northernthaifoodmod:kapok_flower_seed"
+  }
+}

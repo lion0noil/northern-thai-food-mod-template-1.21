@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "northernthaifoodmod:thai_eggplant"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "northernthaifoodmod:thai_eggplant_seed"
+  }
+}

@@ -49,5 +49,108 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.MAGIC_BLOCK), conditionsFromItem(ModBlocks.MAGIC_BLOCK))
                 .offerTo(exporter, Identifier.of(NorthernThaiFoodMod.MOD_ID, "raw_pink_garnet_from_magic_block"));
 
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.RICE_SEED, 1)
+                .input(ModItems.RICE)
+                .criterion(hasItem(ModItems.RICE), conditionsFromItem(ModItems.RICE))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.BEAN_SEED, 1)
+                .input(ModItems.BEAN)
+                .criterion(hasItem(ModItems.BEAN), conditionsFromItem(ModItems.BEAN))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.CHILI_SEED, 1)
+                .input(ModItems.CHILI)
+                .criterion(hasItem(ModItems.CHILI), conditionsFromItem(ModItems.CHILI))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.CILANTRO_SEED, 1)
+                .input(ModItems.CHILANTRO)
+                .criterion(hasItem(ModItems.CHILANTRO), conditionsFromItem(ModItems.CHILANTRO))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.GALANGAL_SEED, 1)
+                .input(ModItems.GALANGAL)
+                .criterion(hasItem(ModItems.GALANGAL), conditionsFromItem(ModItems.GALANGAL))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.GARLIC_SEED, 1)
+                .input(ModItems.GARLIC)
+                .criterion(hasItem(ModItems.GARLIC), conditionsFromItem(ModItems.GARLIC))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.GINGER_SEED, 1)
+                .input(ModItems.GINGER)
+                .criterion(hasItem(ModItems.GINGER), conditionsFromItem(ModItems.GINGER))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.GREEN_ONION_SEED, 1)
+                .input(ModItems.GREEN_ONION)
+                .criterion(hasItem(ModItems.GREEN_ONION), conditionsFromItem(ModItems.GREEN_ONION))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.IVY_G_L_SEED, 1)
+                .input(ModItems.IVY)
+                .criterion(hasItem(ModItems.IVY), conditionsFromItem(ModItems.IVY))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.KAFFIR_SEED, 1)
+                .input(ModItems.KAFFIR)
+                .criterion(hasItem(ModItems.KAFFIR), conditionsFromItem(ModItems.KAFFIR))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.KAPOK_SEED, 1)
+                .input(ModItems.KAPOK)
+                .criterion(hasItem(ModItems.KAPOK), conditionsFromItem(ModItems.KAPOK))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.LAKSA_SEED, 1)
+                .input(ModItems.LAKSA)
+                .criterion(hasItem(ModItems.LAKSA), conditionsFromItem(ModItems.LAKSA))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.LEMONGRASS_SEED, 1)
+                .input(ModItems.LEMONGRASS)
+                .criterion(hasItem(ModItems.LEMONGRASS), conditionsFromItem(ModItems.LEMONGRASS))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.LONG_BEAN_SEED, 1)
+                .input(ModItems.LONG_BEAN)
+                .criterion(hasItem(ModItems.LONG_BEAN), conditionsFromItem(ModItems.LONG_BEAN))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.PINEAPPLE_SEED, 1)
+                .input(ModItems.PINEAPPLE)
+                .criterion(hasItem(ModItems.PINEAPPLE), conditionsFromItem(ModItems.PINEAPPLE))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.SHALLOT_SEED, 1)
+                .input(ModItems.SHALLOT)
+                .criterion(hasItem(ModItems.SHALLOT), conditionsFromItem(ModItems.SHALLOT))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.SPEARMINT_SEED, 1)
+                .input(ModItems.SPEARMINT)
+                .criterion(hasItem(ModItems.SPEARMINT), conditionsFromItem(ModItems.SPEARMINT))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.TAMARIND_SEED, 1)
+                .input(ModItems.TAMARIND)
+                .criterion(hasItem(ModItems.TAMARIND), conditionsFromItem(ModItems.TAMARIND))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.THAI_EGGPLANT_SEED, 1)
+                .input(ModItems.THAI_EGGPLANT)
+                .criterion(hasItem(ModItems.THAI_EGGPLANT), conditionsFromItem(ModItems.THAI_EGGPLANT))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.TOMATO_SEED, 1)
+                .input(ModItems.TOMATO)
+                .criterion(hasItem(ModItems.TOMATO), conditionsFromItem(ModItems.TOMATO))
+                .offerTo(exporter);
+
+
+
+
     }
 }

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "northernthaifoodmod:tomato"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "northernthaifoodmod:tomato_seed"
+  }
+}
