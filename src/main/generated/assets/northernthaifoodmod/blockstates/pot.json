@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "northernthaifoodmod:block/pot",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "northernthaifoodmod:block/pot"
+    },
+    "facing=south": {
+      "model": "northernthaifoodmod:block/pot",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "northernthaifoodmod:block/pot",
+      "y": 270
+    }
+  }
+}

@@ -119,6 +119,15 @@ public class ModBlocks {
             new TomatoCropBlock(AbstractBlock.Settings.create().noCollision()
                     .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).mapColor(MapColor.DARK_GREEN)));
 
+    public static final Block POT = registerBlock("pot",
+            new PotBlock(AbstractBlock.Settings.create().nonOpaque()));
+
+    public static final Block PAN = registerBlock("pan",
+            new PanBlock(AbstractBlock.Settings.create().nonOpaque()));
+
+    public static final Block STOVE = registerBlock("stove",
+            new StoveBlock(AbstractBlock.Settings.create().nonOpaque()));
+
 
     private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registries.BLOCK, Identifier.of(NorthernThaiFoodMod.MOD_ID, name), block);

@@ -146,5 +146,10 @@
   "item.northernthaifoodmod.food19": "Chicken Kaeng Khai",
   "item.northernthaifoodmod.food20": "Sa Jin",
 
-  "item.northernthaifoodmod.food21": "Sticky Rice"
+  "item.northernthaifoodmod.food21": "Sticky Rice",
+
+
+  "block.northernthaifoodmod.pot": "Pot",
+  "block.northernthaifoodmod.pan": "Pan",
+  "block.northernthaifoodmod.stove": "Stove"
 }

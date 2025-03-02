@@ -139,6 +139,10 @@ public class ModItemGroups {
 
                         entries.add(ModItems.FOOD21);
 
+                        entries.add(ModBlocks.POT);
+                        entries.add(ModBlocks.PAN);
+                        entries.add(ModBlocks.STOVE);
+
 
                     }).build());
 
