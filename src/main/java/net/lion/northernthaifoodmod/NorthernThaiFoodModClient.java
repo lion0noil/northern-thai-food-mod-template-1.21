@@ -3,6 +3,9 @@ package net.lion.northernthaifoodmod;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.lion.northernthaifoodmod.block.ModBlocks;
+import net.lion.northernthaifoodmod.screen.ModScreenHandlers;
+import net.lion.northernthaifoodmod.screen.PotScreen;
+import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.render.RenderLayer;
 
 public class NorthernThaiFoodModClient implements ClientModInitializer {
@@ -35,6 +38,8 @@ public class NorthernThaiFoodModClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.TAMARIND_CROP, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.THAI_EGGPLANT_CROP, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.TOMATO_CROP, RenderLayer.getCutout());
+
+        HandledScreens.register(ModScreenHandlers.POT_SCREEN_HANDLER, PotScreen::new);
 
     }
 }
