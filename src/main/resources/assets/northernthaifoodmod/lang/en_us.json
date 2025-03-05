@@ -149,5 +149,8 @@
   "item.northernthaifoodmod.food21": "Sticky Rice",
 
 
-  "block.northernthaifoodmod.stove": "Stove"
+  "block.northernthaifoodmod.stove": "Stove",
+  "block.northernthaifoodmod.ingredient_trades": "Ingredient Trades",
+  "block.northernthaifoodmod.sell_trades": "Selling Trades",
+  "block.northernthaifoodmod.vegetable_trades": "Vegetable Trades"
 }

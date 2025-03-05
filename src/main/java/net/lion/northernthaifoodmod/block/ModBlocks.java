@@ -124,6 +124,15 @@ public class ModBlocks {
     public static final Block STOVE = registerBlock("stove",
             new StoveBlock(AbstractBlock.Settings.create().nonOpaque()));
 
+    public static final Block INGREDIENT_TRADES = registerBlock("ingredient_trades",
+            new IngredienttradesBlock(AbstractBlock.Settings.create().nonOpaque()));
+
+    public static final Block SELL_TRADES = registerBlock("sell_trades",
+            new SelltradesBlock(AbstractBlock.Settings.create().nonOpaque()));
+
+    public static final Block VEGETABLE_TRADES = registerBlock("vegetable_trades",
+            new VegetabletradesBlock(AbstractBlock.Settings.create().nonOpaque()));
+
 
 
     private static Block registerBlockWithoutBlockItem(String name, Block block) {

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "northernthaifoodmod:block/sell_trades",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "northernthaifoodmod:block/sell_trades"
+    },
+    "facing=south": {
+      "model": "northernthaifoodmod:block/sell_trades",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "northernthaifoodmod:block/sell_trades",
+      "y": 270
+    }
+  }
+}

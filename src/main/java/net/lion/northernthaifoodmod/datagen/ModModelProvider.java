@@ -52,6 +52,9 @@ public class ModModelProvider extends FabricModelProvider {
 
 
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.STOVE);
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.INGREDIENT_TRADES);
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.SELL_TRADES);
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.VEGETABLE_TRADES);
 
 
     }
