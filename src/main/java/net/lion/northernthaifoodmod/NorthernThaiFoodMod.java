@@ -56,5 +56,27 @@ public class NorthernThaiFoodMod implements ModInitializer {
 					new TradedItem(ModItems.BEAN,8),
 					new ItemStack(Items.EMERALD,1),4,7,0.04f));
 		});
+
+		TradeOfferHelper.registerVillagerOffers(ModVillagers.VEGETABLE,1,factories -> {
+			factories.add((entity, random) -> new TradeOffer(
+					new TradedItem(Items.EMERALD,3),
+					new ItemStack(ModItems.BEAN,1),4,7,0.04f));
+
+			factories.add((entity, random) -> new TradeOffer(
+					new TradedItem(Items.EMERALD,3),
+					new ItemStack(ModItems.CHILI,1),4,7,0.04f));
+		});
+
+		TradeOfferHelper.registerVillagerOffers(ModVillagers.INGREDIENT,1,factories -> {
+			factories.add((entity, random) -> new TradeOffer(
+					new TradedItem(Items.EMERALD,2),
+					new ItemStack(ModItems.CURRY_POWDER,1),4,7,0.04f));
+
+			factories.add((entity, random) -> new TradeOffer(
+					new TradedItem(Items.EMERALD,2),
+					new ItemStack(ModItems.F_SOYBEAN_P,1),4,7,0.04f));
+		});
+
+
 	}
 }
