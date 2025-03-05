@@ -150,7 +150,9 @@
 
 
   "block.northernthaifoodmod.stove": "Stove",
-  "block.northernthaifoodmod.ingredient_trades": "Ingredient Trades",
+  "block.northernthaifoodmod.ingredient_trades": "Vegetable Trades",
   "block.northernthaifoodmod.sell_trades": "Selling Trades",
-  "block.northernthaifoodmod.vegetable_trades": "Vegetable Trades"
+  "block.northernthaifoodmod.vegetable_trades": "Ingredient Trades",
+
+  "entity.minecraft.villager.northernthaifoodmod.sell_trades_employee": "Selling Trades Employee"
 }

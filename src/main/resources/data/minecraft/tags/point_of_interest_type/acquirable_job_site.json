@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "northernthaifoodmod:sell_poi",
+      "required": false
+    }
+  ]
+}
