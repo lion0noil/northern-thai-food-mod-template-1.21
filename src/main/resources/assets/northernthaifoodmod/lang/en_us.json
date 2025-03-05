@@ -154,5 +154,7 @@
   "block.northernthaifoodmod.sell_trades": "Selling Trades",
   "block.northernthaifoodmod.vegetable_trades": "Ingredient Trades",
 
-  "entity.minecraft.villager.northernthaifoodmod.sell_trades_employee": "Selling Trades Employee"
+  "entity.minecraft.villager.northernthaifoodmod.sell_trades_employee": "Selling Trades Employee",
+  "entity.minecraft.villager.northernthaifoodmod.vegetable_trades_employee": "Vegetable Trades Employee",
+  "entity.minecraft.villager.northernthaifoodmod.ingredient_trades_employee": "Ingerdient Trades Employee"
 }

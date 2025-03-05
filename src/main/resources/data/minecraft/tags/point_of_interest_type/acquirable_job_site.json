@@ -4,6 +4,14 @@
     {
       "id": "northernthaifoodmod:sell_poi",
       "required": false
+    },
+    {
+      "id": "northernthaifoodmod:vegetable_poi",
+      "required": false
+    },
+    {
+      "id": "northernthaifoodmod:ingredient_poi",
+      "required": false
     }
   ]
 }

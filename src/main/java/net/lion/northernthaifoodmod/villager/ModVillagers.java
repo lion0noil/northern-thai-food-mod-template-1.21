@@ -15,10 +15,24 @@ import net.minecraft.village.VillagerProfession;
 import net.minecraft.world.poi.PointOfInterestType;
 
 public class ModVillagers {
+    //sell
     public static final RegistryKey<PointOfInterestType> SELL_POI_KEY = registerPoiKey("sell_poi");
     public static final PointOfInterestType SELL_POI = registerPOI("sell_poi",ModBlocks.SELL_TRADES);
 
     public static final VillagerProfession SELL = registerProfession("sell_trades_employee", SELL_POI_KEY);
+
+    //vegetable
+    public static final RegistryKey<PointOfInterestType> VEGETABLE_POI_KEY = registerPoiKey("vegetable_poi");
+    public static final PointOfInterestType VEGETABLE_POI = registerPOI("vegetable_poi",ModBlocks.INGREDIENT_TRADES);
+
+    public static final VillagerProfession VEGETABLE = registerProfession("vegetable_trades_employee", VEGETABLE_POI_KEY);
+
+
+    //ingredient
+    public static final RegistryKey<PointOfInterestType> INGREDIENT_POI_KEY = registerPoiKey("ingredient_poi");
+    public static final PointOfInterestType INGREDIENT_POI = registerPOI("ingredient_poi",ModBlocks.VEGETABLE_TRADES);
+
+    public static final VillagerProfession INGREDIENT = registerProfession("ingredient_trades_employee", INGREDIENT_POI_KEY);
 
 
     private static VillagerProfession registerProfession(String name, RegistryKey<PointOfInterestType> type) {
