@@ -5,10 +5,8 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.lion.northernthaifoodmod.block.ModBlocks;
-import net.lion.northernthaifoodmod.block.entity.ModBlockEntities;
 import net.lion.northernthaifoodmod.item.ModItemGroups;
 import net.lion.northernthaifoodmod.item.ModItems;
-import net.lion.northernthaifoodmod.screen.ModScreenHandlers;
 import net.lion.northernthaifoodmod.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -27,8 +25,6 @@ public class NorthernThaiFoodMod implements ModInitializer {
 
 		ModWorldGeneration.generateModWorldGen();
 
-		ModBlockEntities.registerBlockEntities();
-		ModScreenHandlers.registerScreenHandler();
 
 		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES,600);
 

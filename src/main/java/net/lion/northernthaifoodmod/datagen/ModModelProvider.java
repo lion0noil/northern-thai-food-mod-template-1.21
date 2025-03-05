@@ -50,10 +50,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCrop(ModBlocks.THAI_EGGPLANT_CROP, ThaieggplantCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
         blockStateModelGenerator.registerCrop(ModBlocks.TOMATO_CROP, TomatoCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
 
-        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.PAN);
+
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.STOVE);
 
-        blockStateModelGenerator.registerSimpleState(ModBlocks.POT);
 
     }
 

@@ -120,14 +120,9 @@ public class ModBlocks {
                     .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).mapColor(MapColor.DARK_GREEN)));
 
 
-    public static final Block PAN = registerBlock("pan",
-            new PanBlock(AbstractBlock.Settings.create().nonOpaque()));
 
     public static final Block STOVE = registerBlock("stove",
             new StoveBlock(AbstractBlock.Settings.create().nonOpaque()));
-
-    public static final Block POT = registerBlock("pot",
-            new PotBlock(AbstractBlock.Settings.create().nonOpaque()));
 
 
 
