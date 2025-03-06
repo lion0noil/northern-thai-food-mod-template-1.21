@@ -13,6 +13,7 @@ import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.util.Identifier;
 
 import java.util.List;
@@ -166,9 +167,29 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("F F")
                 .pattern("WWW")
                 .input('R', Blocks.RED_WOOL)
-                .input('F', Items.OAK_FENCE)
-                .input('W', Items.OAK_PLANKS)
+                .input('F', ItemTags.FENCES)
+                .input('W', ItemTags.PLANKS)
                 .criterion(hasItem(Blocks.RED_WOOL), conditionsFromItem(Blocks.RED_WOOL))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.VEGETABLE_TRADES,1)
+                .pattern("BBB")
+                .pattern("F F")
+                .pattern("WWW")
+                .input('B', Blocks.BLUE_WOOL)
+                .input('F', ItemTags.FENCES)
+                .input('W', ItemTags.PLANKS)
+                .criterion(hasItem(Blocks.BLUE_WOOL), conditionsFromItem(Blocks.BLUE_WOOL))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.INGREDIENT_TRADES,1)
+                .pattern("GGG")
+                .pattern("F F")
+                .pattern("WWW")
+                .input('G', Blocks.GREEN_WOOL)
+                .input('F', ItemTags.FENCES)
+                .input('W', ItemTags.PLANKS)
+                .criterion(hasItem(Blocks.GREEN_WOOL), conditionsFromItem(Blocks.GREEN_WOOL))
                 .offerTo(exporter);
 
 
