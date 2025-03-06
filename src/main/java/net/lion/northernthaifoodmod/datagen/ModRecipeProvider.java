@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.lion.northernthaifoodmod.NorthernThaiFoodMod;
 import net.lion.northernthaifoodmod.block.ModBlocks;
 import net.lion.northernthaifoodmod.item.ModItems;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
@@ -158,6 +159,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('G', Items.GLASS_BOTTLE)
                 .input('W', Items.WATER_BUCKET)
                 .criterion(hasItem(ModItems.TAMARIND), conditionsFromItem(ModItems.TAMARIND))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.SELL_TRADES,1)
+                .pattern("RRR")
+                .pattern("F F")
+                .pattern("WWW")
+                .input('R', Blocks.RED_WOOL)
+                .input('F', Items.OAK_FENCE)
+                .input('W', Items.OAK_PLANKS)
+                .criterion(hasItem(Blocks.RED_WOOL), conditionsFromItem(Blocks.RED_WOOL))
                 .offerTo(exporter);
 
 
