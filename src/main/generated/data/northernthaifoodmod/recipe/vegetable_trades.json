@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:blue_wool"
+    },
+    "F": {
+      "tag": "minecraft:fences"
+    },
+    "W": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "F F",
+    "WWW"
+  ],
+  "result": {
+    "count": 1,
+    "id": "northernthaifoodmod:vegetable_trades"
+  }
+}

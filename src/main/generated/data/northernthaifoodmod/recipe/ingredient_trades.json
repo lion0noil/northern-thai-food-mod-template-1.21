@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "tag": "minecraft:fences"
+    },
+    "G": {
+      "item": "minecraft:green_wool"
+    },
+    "W": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "GGG",
+    "F F",
+    "WWW"
+  ],
+  "result": {
+    "count": 1,
+    "id": "northernthaifoodmod:ingredient_trades"
+  }
+}
