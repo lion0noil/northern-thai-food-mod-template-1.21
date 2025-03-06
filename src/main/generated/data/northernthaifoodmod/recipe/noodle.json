@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "northernthaifoodmod:flour"
+    },
+    {
+      "item": "northernthaifoodmod:flour"
+    },
+    {
+      "item": "northernthaifoodmod:flour"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    }
+  ],
+  "result": {
+    "count": 6,
+    "id": "northernthaifoodmod:noodle"
+  }
+}

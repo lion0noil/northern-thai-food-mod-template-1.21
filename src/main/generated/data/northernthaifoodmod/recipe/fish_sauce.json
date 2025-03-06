@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "tag": "minecraft:fishes"
+    },
+    "G": {
+      "item": "minecraft:glass_bottle"
+    },
+    "W": {
+      "item": "minecraft:water_bucket"
+    }
+  },
+  "pattern": [
+    "FFF",
+    " W ",
+    "GGG"
+  ],
+  "result": {
+    "count": 3,
+    "id": "northernthaifoodmod:fish_sauce"
+  }
+}

@@ -192,7 +192,27 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Blocks.GREEN_WOOL), conditionsFromItem(Blocks.GREEN_WOOL))
                 .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.FISH_SAUCE,3)
+                .pattern("FFF")
+                .pattern(" W ")
+                .pattern("GGG")
+                .input('F', ItemTags.FISHES)
+                .input('W', Items.WATER_BUCKET)
+                .input('G', Items.GLASS_BOTTLE)
+                .criterion(hasItem(Items.GLASS_BOTTLE), conditionsFromItem(Items.GLASS_BOTTLE))
+                .offerTo(exporter);
 
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.FLOUR, 3)
+                .input(Items.WHEAT,3)
+                .input(Items.WATER_BUCKET)
+                .criterion(hasItem(Items.WHEAT), conditionsFromItem(Items.WHEAT))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.NOODLE, 6)
+                .input(ModItems.FLOUR,3)
+                .input(Items.WATER_BUCKET)
+                .criterion(hasItem(ModItems.FLOUR), conditionsFromItem(ModItems.FLOUR))
+                .offerTo(exporter);
 
     }
 }
