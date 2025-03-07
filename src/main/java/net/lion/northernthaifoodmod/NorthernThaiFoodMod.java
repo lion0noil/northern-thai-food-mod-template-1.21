@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.lion.northernthaifoodmod.block.ModBlocks;
+import net.lion.northernthaifoodmod.block.entity.ModBlockEntities;
 import net.lion.northernthaifoodmod.item.ModItemGroups;
 import net.lion.northernthaifoodmod.item.ModItems;
 import net.lion.northernthaifoodmod.villager.ModVillagers;
@@ -33,6 +34,8 @@ public class NorthernThaiFoodMod implements ModInitializer {
 		ModWorldGeneration.generateModWorldGen();
 
 		ModVillagers.registerVillagers();
+
+		ModBlockEntities.registerBlockEntities();
 
 
 		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES,600);

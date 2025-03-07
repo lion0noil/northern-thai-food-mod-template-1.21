@@ -150,6 +150,9 @@
 
 
   "block.northernthaifoodmod.stove": "Stove",
+  "block.northernthaifoodmod.pot": "Pot",
+
+
   "block.northernthaifoodmod.ingredient_trades": "Vegetable Trades",
   "block.northernthaifoodmod.sell_trades": "Selling Trades",
   "block.northernthaifoodmod.vegetable_trades": "Ingredient Trades",

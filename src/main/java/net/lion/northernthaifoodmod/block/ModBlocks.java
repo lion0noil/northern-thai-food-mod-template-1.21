@@ -135,6 +135,12 @@ public class ModBlocks {
 
 
 
+    public static final Block POT = registerBlock("pot",
+            new PotBlock(AbstractBlock.Settings.create().nonOpaque()));
+
+
+
+
     private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registries.BLOCK, Identifier.of(NorthernThaiFoodMod.MOD_ID, name), block);
     }

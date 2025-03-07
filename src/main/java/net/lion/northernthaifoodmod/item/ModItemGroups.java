@@ -140,9 +140,14 @@ public class ModItemGroups {
                         entries.add(ModItems.FOOD21);
 
                         entries.add(ModBlocks.STOVE);
+                        entries.add(ModBlocks.POT);
+
+
                         entries.add(ModBlocks.INGREDIENT_TRADES);
                         entries.add(ModBlocks.SELL_TRADES);
                         entries.add(ModBlocks.VEGETABLE_TRADES);
+
+
 
 
                     }).build());
