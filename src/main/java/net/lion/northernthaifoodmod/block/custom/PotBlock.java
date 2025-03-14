@@ -8,6 +8,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.ItemActionResult;
 import net.minecraft.util.ItemScatterer;
@@ -61,29 +62,14 @@ public class PotBlock extends BlockWithEntity implements BlockEntityProvider {
     }
 
     @Override
-    protected ItemActionResult onUseWithItem(ItemStack stack, BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-        if(world.getBlockEntity(pos) instanceof PotBlockEntity potBlockEntity) {
-            if(potBlockEntity.isEmpty() && !stack.isEmpty()) {
-                potBlockEntity.setStack(0, stack.copyWithCount(1));
-                world.playSound(player, pos, SoundEvents.ENTITY_ITEM_PICKUP, SoundCategory.BLOCKS, 1f, 2f);
-                stack.decrement(1);
-
-                potBlockEntity.markDirty();
-                world.updateListeners(pos, state, state, 0);
-            } else if(stack.isEmpty() && !player.isSneaking()) {
-                ItemStack stackOnPedestal = potBlockEntity.getStack(0);
-                player.setStackInHand(Hand.MAIN_HAND, stackOnPedestal);
-                world.playSound(player, pos, SoundEvents.ENTITY_ITEM_PICKUP, SoundCategory.BLOCKS, 1f, 1f);
-                potBlockEntity.clear();
-
-                potBlockEntity.markDirty();
-                world.updateListeners(pos, state, state, 0);
-            }else if(player.isSneaking() && !world.isClient()) {
-                player.openHandledScreen(potBlockEntity);
+    protected ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
+        if (!world.isClient) { // Only run this on the server side
+            BlockEntity blockEntity = world.getBlockEntity(pos);
+            if (blockEntity instanceof PotBlockEntity potBlockEntity) {
+                player.openHandledScreen(potBlockEntity); // Open the GUI screen
             }
         }
-
-        return ItemActionResult.SUCCESS;
+        return ActionResult.SUCCESS;
     }
 }
 

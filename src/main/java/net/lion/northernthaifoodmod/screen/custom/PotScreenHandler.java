@@ -23,11 +23,26 @@ public class PotScreenHandler extends ScreenHandler {
         super(ModScreenHandlers.POT_SCREEN_HANDLER, syncId);
         this.inventory = ((Inventory) blockEntity);
 
-        this.addSlot(new Slot(inventory,0,80,35));
+        for (int row = 0; row < 3; row++) {
+            for (int col = 0; col < 3; col++) {
+                this.addSlot(new Slot(inventory, col + row * 3, 23 + col * 16, 12 + row * 18));
+            }
+        }
+
+        // Add 1 output slot (Special slot that doesn't accept input)
+        this.addSlot(new Slot(inventory, 9, 121, 30) {
+            @Override
+            public boolean canInsert(ItemStack stack) {
+                return false; // Prevent inserting items into the output slot
+            }
+        });
+
 
         addPlayerInventory(playerInventory);
         addPlayerHotbar(playerInventory);
     }
+
+
 
     @Override
     public ItemStack quickMove(PlayerEntity player, int invSlot) {
