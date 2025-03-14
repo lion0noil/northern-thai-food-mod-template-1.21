@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
 import net.lion.northernthaifoodmod.block.ModBlocks;
 import net.lion.northernthaifoodmod.block.entity.ImplementedInventory;
 import net.lion.northernthaifoodmod.block.entity.ModBlockEntities;
+import net.lion.northernthaifoodmod.item.ModItems;
 import net.lion.northernthaifoodmod.screen.custom.PotScreenHandler;
 import net.lion.northernthaifoodmod.util.ModTags;
 import net.minecraft.block.BlockState;
@@ -73,6 +74,8 @@ public class PotBlockEntity extends BlockEntity implements ImplementedInventory,
             return new ItemStack(Items.COOKED_PORKCHOP);
         } else if (input.getItem() == Items.CHICKEN) {
             return new ItemStack(Items.COOKED_CHICKEN);
+        } else if (input.getItem() == ModItems.GREEN_ONION) {
+            return new ItemStack(ModItems.FOOD1);
         } else {
             return ItemStack.EMPTY;
         }
