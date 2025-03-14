@@ -9,6 +9,7 @@ import net.lion.northernthaifoodmod.block.ModBlocks;
 import net.lion.northernthaifoodmod.block.entity.ModBlockEntities;
 import net.lion.northernthaifoodmod.item.ModItemGroups;
 import net.lion.northernthaifoodmod.item.ModItems;
+import net.lion.northernthaifoodmod.screen.ModScreenHandlers;
 import net.lion.northernthaifoodmod.villager.ModVillagers;
 import net.lion.northernthaifoodmod.world.gen.ModWorldGeneration;
 import net.minecraft.item.ItemStack;
@@ -36,6 +37,7 @@ public class NorthernThaiFoodMod implements ModInitializer {
 		ModVillagers.registerVillagers();
 
 		ModBlockEntities.registerBlockEntities();
+		ModScreenHandlers.registerScreenHandlers();
 
 
 		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES,600);

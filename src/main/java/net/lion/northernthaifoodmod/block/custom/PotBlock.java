@@ -78,6 +78,8 @@ public class PotBlock extends BlockWithEntity implements BlockEntityProvider {
 
                 potBlockEntity.markDirty();
                 world.updateListeners(pos, state, state, 0);
+            }else if(player.isSneaking() && !world.isClient()) {
+                player.openHandledScreen(potBlockEntity);
             }
         }
 
