@@ -83,6 +83,7 @@ public class PotBlockEntity extends BlockEntity implements ImplementedInventory,
         return inventory;
     }
 
+
     @Override
     protected void writeNbt(NbtCompound nbt, RegistryWrapper.WrapperLookup registryLookup) {
         super.writeNbt(nbt, registryLookup);
