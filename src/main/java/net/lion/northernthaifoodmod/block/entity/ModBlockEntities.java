@@ -13,7 +13,9 @@ public class ModBlockEntities {
             Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(NorthernThaiFoodMod.MOD_ID, "pot_be"),
                     BlockEntityType.Builder.create(PotBlockEntity::new, ModBlocks.POT).build());
 
+
     public static void registerBlockEntities() {
         NorthernThaiFoodMod.LOGGER.info("Registering Block Entities for " + NorthernThaiFoodMod.MOD_ID);
+
     }
 }
