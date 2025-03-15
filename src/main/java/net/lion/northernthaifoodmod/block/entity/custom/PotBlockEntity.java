@@ -12,12 +12,14 @@ import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventories;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.listener.ClientPlayPacketListener;
 import net.minecraft.network.packet.Packet;
 import net.minecraft.network.packet.s2c.play.BlockEntityUpdateS2CPacket;
+import net.minecraft.recipe.Recipe;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.server.network.ServerPlayerEntity;
@@ -27,10 +29,16 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class PotBlockEntity extends BlockEntity implements ImplementedInventory, ExtendedScreenHandlerFactory<BlockPos> {
     private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(10,ItemStack.EMPTY);
+    private static final int INPUT = 0;
+    private static final int OUTPUT = 9;
+
     private int cookTime = 0;
-    private static final int COOK_TIME_TOTAL = 100; // Adjust cooking speed
+    private static final int COOK_TIME_TOTAL = 72; // Adjust cooking speed
 
     public PotBlockEntity(BlockPos pos, BlockState state) {
         super(ModBlockEntities.POT_BE, pos, state);
@@ -53,21 +61,68 @@ public class PotBlockEntity extends BlockEntity implements ImplementedInventory,
         return world.getBlockState(pos.down()).getBlock() == ModBlocks.STOVE;
     }
 
+    private static final List<Recipe> RECIPES = List.of(
+            new Recipe(List.of(ModItems.GREEN_ONION, ModItems.RICE), new ItemStack(ModItems.FOOD1)),
+            new Recipe(List.of(Items.BEEF), new ItemStack(Items.COOKED_BEEF)),
+            new Recipe(List.of(Items.PORKCHOP), new ItemStack(Items.COOKED_PORKCHOP)),
+            new Recipe(List.of(Items.CHICKEN), new ItemStack(Items.COOKED_CHICKEN))
+    );
+
+    private static class Recipe {
+        List<Item> inputs;
+        ItemStack output;
+
+        Recipe(List<Item> inputs, ItemStack output) {
+            this.inputs = inputs;
+            this.output = output;
+        }
+    }
+
     private void cookItems() {
-        for (int i = 0; i < 9; i++) {
-            ItemStack input = this.inventory.get(i);
-            if (!input.isEmpty()) {
-                ItemStack cooked = getCookedResult(input);
-                if (!cooked.isEmpty()) {
-                    this.inventory.set(i, ItemStack.EMPTY); // Remove raw item
-                    this.inventory.set(9, cooked); // Place cooked item in output slot
-                }
+        for (Recipe recipe : RECIPES) {
+            if (canCraft(recipe)) {
+                craft(recipe);
+                break; // Only craft one item per tick
             }
         }
+    }
+
+    private void craft(Recipe recipe) {
+        List<Item> requiredItems = new ArrayList<>(recipe.inputs);
+
+        // Remove ingredients from the input slots
+        for (int i = 0; i < 9; i++) {
+            ItemStack stack = this.inventory.get(i);
+            if (requiredItems.remove(stack.getItem())) {
+                stack.decrement(1);
+            }
+            if (requiredItems.isEmpty()) break;
+        }
+
+        // Handle output slot stacking
+        ItemStack outputStack = this.inventory.get(OUTPUT);
+        if (!outputStack.isEmpty() && outputStack.isOf(recipe.output.getItem())) {
+            // If output is the same item, increase the stack size
+            outputStack.increment(recipe.output.getCount());
+        } else if (outputStack.isEmpty()) {
+            // If output slot is empty, set the new item
+            this.inventory.set(OUTPUT, recipe.output.copy());
+        }
+
         markDirty();
     }
 
-    private ItemStack getCookedResult(ItemStack input) {
+    private boolean canCraft(Recipe recipe) {
+        List<Item> requiredItems = new ArrayList<>(recipe.inputs);
+        for (int i = 0; i < 9; i++) {
+            ItemStack stack = this.inventory.get(i);
+            requiredItems.remove(stack.getItem());
+            if (requiredItems.isEmpty()) return true;
+        }
+        return false;
+    }
+
+    /*private ItemStack getCookedResult(ItemStack input) {
         if (input.getItem() == Items.BEEF) {
             return new ItemStack(Items.COOKED_BEEF);
         } else if (input.getItem() == Items.PORKCHOP) {
@@ -79,7 +134,7 @@ public class PotBlockEntity extends BlockEntity implements ImplementedInventory,
         } else {
             return ItemStack.EMPTY;
         }
-    }
+    }*/
 
     @Override
     public DefaultedList<ItemStack> getItems() {
