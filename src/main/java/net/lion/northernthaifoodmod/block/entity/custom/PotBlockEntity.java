@@ -34,11 +34,11 @@ import java.util.List;
 
 public class PotBlockEntity extends BlockEntity implements ImplementedInventory, ExtendedScreenHandlerFactory<BlockPos> {
     private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(10,ItemStack.EMPTY);
-    private static final int INPUT = 0;
+    //private static final int INPUT = 0;
     private static final int OUTPUT = 9;
 
     private int cookTime = 0;
-    private static final int COOK_TIME_TOTAL = 72; // Adjust cooking speed
+    //private static final int COOK_TIME_TOTAL = 72; // Adjust cooking speed
 
     public PotBlockEntity(BlockPos pos, BlockState state) {
         super(ModBlockEntities.POT_BE, pos, state);
@@ -46,10 +46,13 @@ public class PotBlockEntity extends BlockEntity implements ImplementedInventory,
     public static void tick(World world, BlockPos pos, BlockState state, PotBlockEntity entity) {
         if (!world.isClient) {
             if (entity.isOnStove(world, pos)) {
-                entity.cookTime++;
-                if (entity.cookTime >= COOK_TIME_TOTAL) {
-                    entity.cookItems();
-                    entity.cookTime = 0;
+                Recipe currentRecipe = entity.getCurrentRecipe();
+                if (currentRecipe != null) {
+                    entity.cookTime++;
+                    if (entity.cookTime >= currentRecipe.cookTime) { // Use recipe's cook time
+                        entity.cookItems();
+                        entity.cookTime = 0;
+                    }
                 }
             } else {
                 entity.cookTime = 0; // Reset cook time if not on stove
@@ -57,24 +60,35 @@ public class PotBlockEntity extends BlockEntity implements ImplementedInventory,
         }
     }
 
+    private Recipe getCurrentRecipe() {
+        for (Recipe recipe : RECIPES) {
+            if (canCraft(recipe)) {
+                return recipe;
+            }
+        }
+        return null;
+    }
+
     private boolean isOnStove(World world, BlockPos pos) {
         return world.getBlockState(pos.down()).getBlock() == ModBlocks.STOVE;
     }
 
     private static final List<Recipe> RECIPES = List.of(
-            new Recipe(List.of(ModItems.GREEN_ONION, ModItems.RICE), new ItemStack(ModItems.FOOD1)),
-            new Recipe(List.of(Items.BEEF), new ItemStack(Items.COOKED_BEEF)),
-            new Recipe(List.of(Items.PORKCHOP), new ItemStack(Items.COOKED_PORKCHOP)),
-            new Recipe(List.of(Items.CHICKEN), new ItemStack(Items.COOKED_CHICKEN))
+            new Recipe(List.of(ModItems.GREEN_ONION, ModItems.RICE), new ItemStack(ModItems.FOOD1), 100),
+            new Recipe(List.of(Items.BEEF), new ItemStack(Items.COOKED_BEEF), 50),
+            new Recipe(List.of(Items.PORKCHOP), new ItemStack(Items.COOKED_PORKCHOP), 60),
+            new Recipe(List.of(Items.CHICKEN), new ItemStack(Items.COOKED_CHICKEN), 40)
     );
 
     private static class Recipe {
         List<Item> inputs;
         ItemStack output;
+        int cookTime; // New field for custom cook time
 
-        Recipe(List<Item> inputs, ItemStack output) {
+        Recipe(List<Item> inputs, ItemStack output, int cookTime) {
             this.inputs = inputs;
             this.output = output;
+            this.cookTime = cookTime; // Store custom cook time
         }
     }
 
