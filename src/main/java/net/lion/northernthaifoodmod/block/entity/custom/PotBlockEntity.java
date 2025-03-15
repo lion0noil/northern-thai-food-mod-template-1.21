@@ -21,6 +21,7 @@ import net.minecraft.network.packet.Packet;
 import net.minecraft.network.packet.s2c.play.BlockEntityUpdateS2CPacket;
 import net.minecraft.recipe.Recipe;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
@@ -37,25 +38,57 @@ public class PotBlockEntity extends BlockEntity implements ImplementedInventory,
     //private static final int INPUT = 0;
     private static final int OUTPUT = 9;
 
+    private final PropertyDelegate propertyDelegate;
     private int cookTime = 0;
-    //private static final int COOK_TIME_TOTAL = 72; // Adjust cooking speed
+    private static final int COOK_TIME_TOTAL = 72; // Adjust cooking speed
 
     public PotBlockEntity(BlockPos pos, BlockState state) {
         super(ModBlockEntities.POT_BE, pos, state);
+        this.propertyDelegate = new PropertyDelegate() {
+            @Override
+            public int get(int index) {
+                return switch (index) {
+                    case 0 -> cookTime;
+                    case 1 -> getCurrentRecipeCookTime(); // Get different cook time for each recipe
+                    default -> 0;
+                };
+            }
+
+            @Override
+            public void set(int index, int value) {
+                if (index == 0) cookTime = value;
+            }
+
+            @Override
+            public int size() {
+                return 2;
+            }
+        };
     }
+
+    private int getCurrentRecipeCookTime() {
+        Recipe currentRecipe = getCurrentRecipe();
+        return currentRecipe != null ? currentRecipe.cookTime : COOK_TIME_TOTAL;
+    }
+
+    public PropertyDelegate getPropertyDelegate() {
+        return propertyDelegate;
+    }
+
+
     public static void tick(World world, BlockPos pos, BlockState state, PotBlockEntity entity) {
         if (!world.isClient) {
             if (entity.isOnStove(world, pos)) {
                 Recipe currentRecipe = entity.getCurrentRecipe();
                 if (currentRecipe != null) {
-                    entity.cookTime++;
-                    if (entity.cookTime >= currentRecipe.cookTime) { // Use recipe's cook time
-                        entity.cookItems();
-                        entity.cookTime = 0;
+                    entity.cookTime++; // Increase cook time as long as we have a valid recipe
+                    if (entity.cookTime >= currentRecipe.cookTime) {
+                        entity.cookItems(); // Craft the item when cooking is done
+                        entity.cookTime = 0; // Reset the cook time after crafting
                     }
                 }
             } else {
-                entity.cookTime = 0; // Reset cook time if not on stove
+                entity.cookTime = 0; // Reset the cook time if not on stove
             }
         }
     }
@@ -77,7 +110,7 @@ public class PotBlockEntity extends BlockEntity implements ImplementedInventory,
             new Recipe(List.of(ModItems.GREEN_ONION, ModItems.RICE), new ItemStack(ModItems.FOOD1), 100),
             new Recipe(List.of(Items.BEEF), new ItemStack(Items.COOKED_BEEF), 50),
             new Recipe(List.of(Items.PORKCHOP), new ItemStack(Items.COOKED_PORKCHOP), 60),
-            new Recipe(List.of(Items.CHICKEN), new ItemStack(Items.COOKED_CHICKEN), 40)
+            new Recipe(List.of(Items.CHICKEN), new ItemStack(Items.COOKED_CHICKEN), 30)
     );
 
     private static class Recipe {
@@ -134,6 +167,22 @@ public class PotBlockEntity extends BlockEntity implements ImplementedInventory,
             if (requiredItems.isEmpty()) return true;
         }
         return false;
+    }
+
+    public int getCookProgress() {
+        Recipe currentRecipe = getCurrentRecipe();
+        if (currentRecipe != null) {
+            return (int) ((float) cookTime / currentRecipe.cookTime * 24); // 24 is the arrow width
+        }
+        return 0;
+    }
+
+    @Override
+    public void setStack(int slot, ItemStack stack) {
+        ImplementedInventory.super.setStack(slot, stack); // Call the superclass method to handle the normal stack update
+        if (slot < 9) {  // Check if the change was in the input slots (0-8)
+            this.cookTime = 0; // Reset cook time when an item is pulled out
+        }
     }
 
     /*private ItemStack getCookedResult(ItemStack input) {

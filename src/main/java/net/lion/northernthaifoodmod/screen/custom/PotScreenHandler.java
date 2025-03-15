@@ -1,5 +1,6 @@
 package net.lion.northernthaifoodmod.screen.custom;
 
+import net.lion.northernthaifoodmod.block.entity.custom.PotBlockEntity;
 import net.lion.northernthaifoodmod.screen.ModScreenHandlers;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -15,6 +16,7 @@ import org.jetbrains.annotations.Nullable;
 
 public class PotScreenHandler extends ScreenHandler {
     private final Inventory inventory;
+    private final PropertyDelegate propertyDelegate;
 
     public PotScreenHandler(int syncId, PlayerInventory playerInventory, BlockPos pos) {
         this(syncId, playerInventory, playerInventory.player.getWorld().getBlockEntity(pos));
@@ -23,6 +25,10 @@ public class PotScreenHandler extends ScreenHandler {
     public PotScreenHandler(int syncId, PlayerInventory playerInventory, BlockEntity blockEntity) {
         super(ModScreenHandlers.POT_SCREEN_HANDLER, syncId);
         this.inventory = ((Inventory) blockEntity);
+        this.propertyDelegate = ((PotBlockEntity) blockEntity).getPropertyDelegate();
+
+        this.addProperties(this.propertyDelegate);
+
 
         for (int row = 0; row < 3; row++) {
             for (int col = 0; col < 3; col++) {
@@ -44,7 +50,15 @@ public class PotScreenHandler extends ScreenHandler {
     }
 
 
-   
+
+    public int getCookProgress() {
+        int cookTime = propertyDelegate.get(0);  // Current cook time
+        int cookTimeTotal = propertyDelegate.get(1);  // Total cook time
+
+        int arrowPixelSize = 24;  // Define the maximum width of the arrow
+        // Calculate the progress in terms of the arrow width (0 to 24 pixels)
+        return cookTimeTotal != 0 && cookTime != 0 ? cookTime * arrowPixelSize / cookTimeTotal : 0;
+    }
 
 
     @Override

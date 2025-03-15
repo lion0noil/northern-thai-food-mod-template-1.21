@@ -12,6 +12,8 @@ import net.minecraft.util.Identifier;
 public class PotScreen extends HandledScreen<PotScreenHandler> {
     public static final Identifier GUI_TEXTURE =
             Identifier.of(NorthernThaiFoodMod.MOD_ID, "textures/gui/pot/pot_gui.png");
+    public static final Identifier GUI_ARROW_TEXTURE =
+            Identifier.of(NorthernThaiFoodMod.MOD_ID, "textures/gui/pot_arrow_progress4.png");
 
 
     public PotScreen(PotScreenHandler handler, PlayerInventory inventory, Text title) {
@@ -29,8 +31,12 @@ public class PotScreen extends HandledScreen<PotScreenHandler> {
 
         context.drawTexture(GUI_TEXTURE, x, y, 0, 0, backgroundWidth, backgroundHeight);
 
+        // Draw the progress arrow (Moving part of the arrow)
+        int progress = handler.getCookProgress(); // Get cooking progress from PotScreenHandler
+        context.drawTexture(GUI_ARROW_TEXTURE, x + 80, y + 28, 176, 14, progress, 16,24,16);
 
     }
+
 
     @Override
     public void render(DrawContext context, int mouseX, int mouseY, float delta) {
