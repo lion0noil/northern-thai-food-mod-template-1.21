@@ -49,6 +49,9 @@ public class PotScreenHandler extends ScreenHandler {
         addPlayerHotbar(playerInventory);
     }
 
+    public boolean isCrafting() {
+        return propertyDelegate.get(0) > 0;
+    }
 
 
     public int getCookProgress() {
