@@ -133,7 +133,6 @@ public class ModItemGroups {
 
                         entries.add(ModItems.FOOD16);
                         entries.add(ModItems.FOOD17);
-                        entries.add(ModItems.FOOD18);
                         entries.add(ModItems.FOOD19);
                         entries.add(ModItems.FOOD20);
 

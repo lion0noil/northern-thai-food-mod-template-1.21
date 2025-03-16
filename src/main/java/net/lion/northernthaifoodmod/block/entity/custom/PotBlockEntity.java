@@ -21,6 +21,7 @@ import net.minecraft.network.packet.Packet;
 import net.minecraft.network.packet.s2c.play.BlockEntityUpdateS2CPacket;
 import net.minecraft.recipe.Recipe;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.server.network.ServerPlayerEntity;
@@ -107,21 +108,62 @@ public class PotBlockEntity extends BlockEntity implements ImplementedInventory,
     }
 
     private static final List<Recipe> RECIPES = List.of(
-            new Recipe(List.of(ModItems.GREEN_ONION, ModItems.RICE), new ItemStack(ModItems.FOOD1), 100),
-            new Recipe(List.of(Items.BEEF), new ItemStack(Items.COOKED_BEEF), 50),
-            new Recipe(List.of(Items.PORKCHOP), new ItemStack(Items.COOKED_PORKCHOP), 60),
-            new Recipe(List.of(Items.CHICKEN), new ItemStack(Items.COOKED_CHICKEN), 30)
+            new Recipe(List.of(Items.EGG,Items.EGG, ModItems.GREEN_ONION,ModItems.CHILI,ModItems.SALT), new ItemStack(ModItems.FOOD1), 50,1),
+            new Recipe(List.of(Items.PORKCHOP,Items.SUGAR, ModItems.TAMARIND_P,ModItems.GINGER,ModItems.GARLIC,ModItems.BEAN,ModItems.PINEAPPLE), new ItemStack(ModItems.FOOD2), 50,1),
+
+            new Recipe(List.of(ModItems.GALANGAL,ModItems.GALANGAL,ModItems.CHILI,ModItems.CHILI,ModItems.GARLIC,ModItems.SALT,Items.BROWN_MUSHROOM), new ItemStack(ModItems.FOOD4), 50,1),
+            new Recipe(List.of(ModItems.GALANGAL,ModItems.GALANGAL,ModItems.CHILI,ModItems.CHILI,ModItems.GARLIC,ModItems.SALT,Items.RED_MUSHROOM), new ItemStack(ModItems.FOOD4), 50,1),
+
+            new Recipe(List.of(Items.BROWN_MUSHROOM,ModItems.TAMARIND,ModItems.GALANGAL,ModItems.CHILI,ModItems.CHILI,ModItems.LEMONGRASS,ModItems.GARLIC,ModItems.SHRIMP_P,ModItems.SALT), new ItemStack(ModItems.FOOD5), 50,1),
+            new Recipe(List.of(Items.RED_MUSHROOM,ModItems.TAMARIND,ModItems.GALANGAL,ModItems.CHILI,ModItems.CHILI,ModItems.LEMONGRASS,ModItems.GARLIC,ModItems.SHRIMP_P,ModItems.SALT), new ItemStack(ModItems.FOOD5), 50,1),
+
+            new Recipe(List.of(Items.PORKCHOP,ModItems.FISH_SAUCE,ModItems.FLOUR,ModItems.OIL), new ItemStack(ModItems.FOOD6), 50,1),
+            new Recipe(List.of(Items.PORKCHOP,Items.EGG,Items.EGG,ModItems.CHILI,ModItems.GREEN_ONION,ModItems.CHILANTRO), new ItemStack(ModItems.FOOD7), 50,1),
+            new Recipe(List.of(ModItems.NOODLE,ModItems.NOODLE,Items.PORKCHOP,ModItems.TOMATO,ModItems.FISH_SAUCE,ModItems.GARLIC,ModItems.SHALLOT,ModItems.SHRIMP_P,ModItems.CHILI), new ItemStack(ModItems.FOOD8), 50,1),
+            new Recipe(List.of(Items.CHICKEN,ModItems.NOODLE,ModItems.OIL,ModItems.CURRY_POWDER), new ItemStack(ModItems.FOOD9), 50,1),
+            new Recipe(List.of(ModItems.CHILI,ModItems.SHALLOT,ModItems.GARLIC,ModItems.CHILANTRO,ModItems.GREEN_ONION), new ItemStack(ModItems.FOOD10), 50,1),
+
+            new Recipe(List.of(Items.PORKCHOP,ModItems.CHILANTRO,ModItems.CHILI,ModItems.CHILANTRO,ModItems.GARLIC,ModItems.SALT,ModItems.FISH_SAUCE,Items.EGG,Items.SUGAR), new ItemStack(ModItems.FOOD11), 50,1),
+            new Recipe(List.of(ModItems.TOMATO,Items.PORKCHOP,ModItems.CHILI,ModItems.CHILI,ModItems.GARLIC,ModItems.SHALLOT,ModItems.SHRIMP_P,Items.SUGAR,ModItems.OIL), new ItemStack(ModItems.FOOD12), 50,1),
+            new Recipe(List.of(Items.CHICKEN,ModItems.KAFFIR,ModItems.CHILI,ModItems.GALANGAL,ModItems.LEMONGRASS,ModItems.SHALLOT,ModItems.GARLIC,ModItems.SALT), new ItemStack(ModItems.FOOD13), 50,1),
+            new Recipe(List.of(ModItems.CHILI,ModItems.SHALLOT,ModItems.GARLIC,Items.COD,ModItems.SHRIMP_P,ModItems.TAMARIND_P,Items.SUGAR,ModItems.FISH_SAUCE,ModItems.OIL), new ItemStack(ModItems.FOOD14), 50,1),
+            new Recipe(List.of(ModItems.CHILI,ModItems.SHALLOT,ModItems.GARLIC,Items.SALMON,ModItems.SHRIMP_P,ModItems.TAMARIND_P,Items.SUGAR,ModItems.FISH_SAUCE,ModItems.OIL), new ItemStack(ModItems.FOOD14), 50,1),
+            new Recipe(List.of(Items.CHICKEN,ModItems.CHILI,ModItems.FISH_SAUCE,ModItems.CHILANTRO,ModItems.GREEN_ONION,ModItems.LAKSA,ModItems.LEMONGRASS,ModItems.KAFFIR), new ItemStack(ModItems.FOOD15), 50,1),
+
+            new Recipe(List.of(Items.PORKCHOP,ModItems.CHILI,ModItems.CHILI,ModItems.LAKSA,ModItems.SPEARMINT,ModItems.GREEN_ONION,ModItems.CHILANTRO), new ItemStack(ModItems.FOOD16), 50,1),
+            new Recipe(List.of(ModItems.RICE,ModItems.RICE,Items.PORKCHOP,ModItems.LEMONGRASS,ModItems.SALT,ModItems.GARLIC,ModItems.SHALLOT,ModItems.CHILI), new ItemStack(ModItems.FOOD17), 50,1),
+
+            new Recipe(List.of(Items.CHICKEN,ModItems.LONG_BEAN,ModItems.THAI_EGGPLANT,Items.BROWN_MUSHROOM,ModItems.CHILI,ModItems.SHRIMP_P,ModItems.FISH_SAUCE,Items.SUGAR), new ItemStack(ModItems.FOOD19), 50,1),
+            new Recipe(List.of(Items.CHICKEN,ModItems.LONG_BEAN,ModItems.THAI_EGGPLANT,Items.RED_MUSHROOM,ModItems.CHILI,ModItems.SHRIMP_P,ModItems.FISH_SAUCE,Items.SUGAR), new ItemStack(ModItems.FOOD19), 50,1),
+
+            new Recipe(List.of(ModItems.CHILI,ModItems.LEMONGRASS,ModItems.SHALLOT,ModItems.LAKSA,ModItems.GREEN_ONION,ModItems.CHILANTRO,Items.PORKCHOP,ModItems.SPEARMINT,ModItems.SALT), new ItemStack(ModItems.FOOD20), 50,1),
+            new Recipe(List.of(ModItems.CHILI,ModItems.LEMONGRASS,ModItems.SHALLOT,ModItems.LAKSA,ModItems.GREEN_ONION,ModItems.CHILANTRO,Items.CHICKEN,ModItems.SPEARMINT,ModItems.SALT), new ItemStack(ModItems.FOOD20), 50,1),
+            new Recipe(List.of(ModItems.CHILI,ModItems.LEMONGRASS,ModItems.SHALLOT,ModItems.LAKSA,ModItems.GREEN_ONION,ModItems.CHILANTRO,Items.BEEF,ModItems.SPEARMINT,ModItems.SALT), new ItemStack(ModItems.FOOD20), 50,1),
+
+            new Recipe(List.of(ModItems.RICE,Items.WATER_BUCKET), new ItemStack(ModItems.FOOD21), 50,3),
+
+
+            new Recipe(List.of(Items.BEEF), new ItemStack(Items.COOKED_BEEF), 30,1),
+            new Recipe(List.of(Items.PORKCHOP), new ItemStack(Items.COOKED_PORKCHOP), 30,1),
+            new Recipe(List.of(Items.CHICKEN), new ItemStack(Items.COOKED_CHICKEN), 30,1)
     );
 
     private static class Recipe {
         List<Item> inputs;
         ItemStack output;
-        int cookTime; // New field for custom cook time
+        int cookTime;
 
-        Recipe(List<Item> inputs, ItemStack output, int cookTime) {
+        /*Recipe(List<Item> inputs, ItemStack output, int cookTime) {
             this.inputs = inputs;
-            this.output = output;
-            this.cookTime = cookTime; // Store custom cook time
+            this.output = output.copy(); // Copy to avoid modifying original items
+            this.cookTime = cookTime;
+        }*/
+
+        Recipe(List<Item> inputs, ItemStack output, int cookTime, int outputCount) {
+            this.inputs = inputs;
+            this.output = output.copy();
+            this.output.setCount(outputCount); // Set the amount of output items
+            this.cookTime = cookTime;
         }
     }
 
@@ -137,22 +179,24 @@ public class PotBlockEntity extends BlockEntity implements ImplementedInventory,
     private void craft(Recipe recipe) {
         List<Item> requiredItems = new ArrayList<>(recipe.inputs);
 
-        // Remove ingredients from the input slots
-        for (int i = 0; i < 9; i++) {
-            ItemStack stack = this.inventory.get(i);
-            if (requiredItems.remove(stack.getItem())) {
-                stack.decrement(1);
+        // Deduct required items from inventory
+        for (Item requiredItem : requiredItems) {
+            int needed = (int) recipe.inputs.stream().filter(item -> item == requiredItem).count();
+            for (int i = 0; i < 9 && needed > 0; i++) {
+                ItemStack stack = this.inventory.get(i);
+                if (stack.isOf(requiredItem)) {
+                    int toRemove = Math.min(stack.getCount(), needed);
+                    stack.decrement(toRemove);
+                    needed -= toRemove;
+                }
             }
-            if (requiredItems.isEmpty()) break;
         }
 
         // Handle output slot stacking
         ItemStack outputStack = this.inventory.get(OUTPUT);
         if (!outputStack.isEmpty() && outputStack.isOf(recipe.output.getItem())) {
-            // If output is the same item, increase the stack size
             outputStack.increment(recipe.output.getCount());
         } else if (outputStack.isEmpty()) {
-            // If output slot is empty, set the new item
             this.inventory.set(OUTPUT, recipe.output.copy());
         }
 
@@ -161,13 +205,34 @@ public class PotBlockEntity extends BlockEntity implements ImplementedInventory,
 
     private boolean canCraft(Recipe recipe) {
         List<Item> requiredItems = new ArrayList<>(recipe.inputs);
+        int[] itemCounts = new int[9]; // Store counts per slot
+
+        // Count available items in input slots
         for (int i = 0; i < 9; i++) {
             ItemStack stack = this.inventory.get(i);
-            requiredItems.remove(stack.getItem());
-            if (requiredItems.isEmpty()) return true;
+            if (!stack.isEmpty()) {
+                itemCounts[i] = stack.getCount();
+            }
         }
-        return false;
+
+        // Check if enough of each required item is available
+        for (Item requiredItem : requiredItems) {
+            int needed = 0;
+            for (int i = 0; i < 9; i++) {
+                if (this.inventory.get(i).isOf(requiredItem)) {
+                    needed += itemCounts[i]; // Add item count from this slot
+                    if (needed >= recipe.inputs.stream().filter(item -> item == requiredItem).count()) {
+                        break; // Stop if enough is found
+                    }
+                }
+            }
+            if (needed < recipe.inputs.stream().filter(item -> item == requiredItem).count()) {
+                return false; // Not enough items
+            }
+        }
+        return true;
     }
+
 
     public int getCookProgress() {
         Recipe currentRecipe = getCurrentRecipe();
@@ -185,19 +250,6 @@ public class PotBlockEntity extends BlockEntity implements ImplementedInventory,
         }
     }
 
-    /*private ItemStack getCookedResult(ItemStack input) {
-        if (input.getItem() == Items.BEEF) {
-            return new ItemStack(Items.COOKED_BEEF);
-        } else if (input.getItem() == Items.PORKCHOP) {
-            return new ItemStack(Items.COOKED_PORKCHOP);
-        } else if (input.getItem() == Items.CHICKEN) {
-            return new ItemStack(Items.COOKED_CHICKEN);
-        } else if (input.getItem() == ModItems.GREEN_ONION) {
-            return new ItemStack(ModItems.FOOD1);
-        } else {
-            return ItemStack.EMPTY;
-        }
-    }*/
 
     @Override
     public DefaultedList<ItemStack> getItems() {

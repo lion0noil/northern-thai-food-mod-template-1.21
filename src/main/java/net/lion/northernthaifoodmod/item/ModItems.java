@@ -154,7 +154,6 @@ public class ModItems {
 
     public static final Item FOOD16 = registerItem("food16", new Item(new Item.Settings().food(ModFoodComponents.FOOD16)));
     public static final Item FOOD17 = registerItem("food17", new Item(new Item.Settings().food(ModFoodComponents.FOOD17)));
-    public static final Item FOOD18 = registerItem("food18", new Item(new Item.Settings().food(ModFoodComponents.FOOD18)));
     public static final Item FOOD19 = registerItem("food19", new Item(new Item.Settings().food(ModFoodComponents.FOOD19)));
     public static final Item FOOD20 = registerItem("food20", new Item(new Item.Settings().food(ModFoodComponents.FOOD20)));
 
